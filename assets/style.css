@@ -802,3 +802,176 @@ footer {
   .website-stats { grid-template-columns: 1fr; }
   .grid-3, .grid-4, .grid-6 { grid-template-columns: 1fr; }
 }
+
+/* ============================================
+   UPDATES – Design fixes
+   ============================================ */
+
+/* --- Gold button variants --- */
+.btn-gold { background: var(--gold); color: var(--white); }
+.btn-gold:hover { background: #c49000; }
+.btn-gold-outline { background: transparent; border: 2px solid var(--gold); color: var(--gold); display: block; margin-bottom: 10px; }
+.btn-gold-outline:hover { background: var(--gold); color: var(--white); }
+
+/* --- Step numbers in gold --- */
+.step-gold {
+  width: 36px;
+  height: 36px;
+  background: var(--gold);
+  color: var(--white);
+  font-family: "kings-caslon", Georgia, serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* --- Hero: full width when no image --- */
+#oben .inner {
+  grid-template-columns: 1fr;
+  max-width: 860px;
+}
+#oben .hero-text > p { max-width: 100%; }
+#oben .advantage-cards { grid-template-columns: 1fr 1fr; }
+#oben .stats-row { grid-template-columns: repeat(4, 1fr); }
+
+/* --- Vorteil 1: full width feature cards (no image) --- */
+.favr-grid-wrap {
+  display: block;
+}
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* --- Blockquote kursiv --- */
+.section-header blockquote,
+blockquote.elementor-blockquote__content {
+  font-style: italic;
+}
+
+/* --- Pakete: aligned rows using subgrid / equal height sections --- */
+.pakete-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  align-items: stretch;
+}
+
+.paket-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  border: 1px solid #eee;
+  border-right: none;
+}
+.paket-card:last-child { border-right: 1px solid #eee; }
+.paket-card.recommended { border: 3px solid var(--gold); }
+
+.paket-head {
+  padding: 24px 20px 16px;
+  border-bottom: 1px solid var(--bg);
+}
+
+.paket-body {
+  padding: 0;
+}
+
+/* Section labels aligned */
+.paket-section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--black);
+  padding: 8px 20px;
+  display: block;
+}
+
+.paket-card.recommended .paket-section-label:last-of-type {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.paket-list {
+  padding: 12px 20px;
+  margin-bottom: 0;
+}
+
+/* --- SCM: 2-row layout --- */
+.scm-row {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.scm-row-top {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.scm-row-bottom {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+}
+
+.scm-item {
+  background: var(--bg2);
+}
+
+.scm-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.scm-item h3 {
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "din-2014", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.scm-cta-box {
+  border: 2px solid var(--gold);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scm-cta-box h3 {
+  font-family: "kings-caslon", Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.scm-cta-box .btn {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+}
+
+/* --- Responsive updates --- */
+@media (max-width: 1100px) {
+  .feature-cards { grid-template-columns: repeat(2, 1fr); }
+  .scm-row-top { grid-template-columns: repeat(3, 1fr); }
+  .scm-row-bottom { grid-template-columns: 1fr 1fr; }
+  .scm-cta-box { grid-column: 1 / -1; }
+}
+
+@media (max-width: 900px) {
+  .scm-row-top { grid-template-columns: repeat(2, 1fr); }
+  .pakete-cards { grid-template-columns: repeat(2, 1fr); }
+  .paket-card { border-right: 1px solid #eee; }
+}
+
+@media (max-width: 600px) {
+  .feature-cards { grid-template-columns: 1fr; }
+  .scm-row-top, .scm-row-bottom { grid-template-columns: 1fr; }
+  .pakete-cards { grid-template-columns: 1fr; }
+  #oben .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
