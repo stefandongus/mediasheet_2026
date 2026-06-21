@@ -1133,3 +1133,43 @@ blockquote.elementor-blockquote__content {
   padding: 10px 24px;
   letter-spacing: 2px;
 }
+
+/* --- Nav: Serif font + wider layout matching original --- */
+#main-nav {
+  padding: 0 40px;
+}
+
+#main-nav .inner {
+  max-width: 1400px;
+  height: 90px;
+}
+
+#main-nav .nav-links a,
+.nav-right a {
+  font-family: "kings-caslon", "Playfair Display", Georgia, serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+#main-nav .nav-links {
+  gap: 36px;
+}
+
+.nav-right {
+  gap: 32px;
+}
+
+/* Lang bar also wider */
+#lang-bar .inner {
+  max-width: 1400px;
+}
+
+/* Section nav also wider */
+#section-nav ul {
+  max-width: 1400px;
+}
+
+/* Section nav sticky offset update */
+#section-nav { top: 90px; }
