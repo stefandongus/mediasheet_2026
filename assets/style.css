@@ -1315,3 +1315,207 @@ blockquote.elementor-blockquote__content {
 @media (max-width: 768px) {
   .pakete-table { min-width: 600px; }
 }
+
+/* ============================================
+   MOBILE FIXES (@max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+
+  /* 1. LANG BAR: sichtbar auf Mobile */
+  #lang-bar { display: block; }
+  #lang-bar .inner {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    justify-content: center;
+    padding: 8px 16px;
+  }
+
+  /* 2. MAIN NAV: Logo links, Burger rechts, keine scrollbare Nav */
+  #main-nav { padding: 0 16px; }
+  #main-nav .inner { height: 64px; justify-content: space-between; }
+  #main-nav .logo img { height: 40px; }
+
+  /* Verstecke Hauptlinks und rechte Nav auf Mobile */
+  #main-nav .nav-links { display: none; }
+  .nav-right { display: none; }
+
+  /* Burger sichtbar */
+  .burger { display: flex; }
+
+  /* Burger-Menü wenn offen */
+  #main-nav .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    gap: 16px;
+    z-index: 200;
+    align-items: flex-start;
+  }
+
+  #main-nav .nav-links.open a { font-size: 16px; }
+
+  /* Section nav sticky offset */
+  #section-nav { top: 64px; }
+
+  /* 3. VORTEIL 1: Feature cards volle Breite, Foto darunter */
+  .favr-grid-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .favr-image { order: 2; }
+  .feature-cards { order: 1; }
+
+  /* 4. PAKETE: Jedes Paket volle Breite, untereinander */
+  .pakete-table-wrap { overflow-x: visible; }
+
+  .pakete-table,
+  .pakete-table thead,
+  .pakete-table tbody,
+  .pakete-table tr,
+  .pakete-table td {
+    display: block;
+    width: 100%;
+  }
+
+  /* Badge row ausblenden auf Mobile */
+  .pt-badge-row { display: none; }
+
+  /* Jede Paket-Zelle als eigene Karte */
+  .pt-name-row { display: block; }
+  .pt-name-row td {
+    border: 1px solid #eee;
+    margin-bottom: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Section rows und List rows zusammen pro Paket */
+  .pt-section-row { display: block; }
+  .pt-section-row td { display: none; } /* werden inline gezeigt */
+
+  .pt-list-row { display: block; }
+  .pt-list-row td {
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 16px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pt-btn-row { display: block; }
+  .pt-btn-row td {
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Recommended col auf Mobile */
+  .pt-recommended-col {
+    border: 3px solid var(--gold) !important;
+  }
+
+  /* Advantage cards: 1 Spalte */
+  .advantage-cards { grid-template-columns: 1fr; }
+
+  /* Stats: 2 Spalten */
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+
+  /* Website features: 1 Spalte */
+  .website-features { grid-template-columns: 1fr; }
+
+  /* Steps: 1 Spalte */
+  .steps-grid { grid-template-columns: 1fr; }
+
+  /* Webdesign: 1 Spalte */
+  .webdesign-grid { grid-template-columns: 1fr; }
+  .webdesign-image { order: 2; margin-top: 24px; }
+
+  /* SCM rows: 1 Spalte */
+  .scm-row-top,
+  .scm-row-bottom { grid-template-columns: 1fr; }
+  .scm-cta-box { margin-top: 0; }
+
+  /* FAQ layout: 1 Spalte */
+  .faq-layout { grid-template-columns: 1fr; gap: 24px; }
+
+  /* Hero: single column */
+  #oben .inner { grid-template-columns: 1fr; }
+  #oben .stats-row { grid-template-columns: repeat(2, 1fr); }
+
+  /* Website section: 1 Spalte */
+  .website-grid { grid-template-columns: 1fr; }
+
+  /* Section padding reduzieren */
+  section { padding: 48px 16px; }
+}
+
+/* PAKETE MOBILE: Komplett neu als gestapelte Karten */
+@media (max-width: 768px) {
+  .pakete-table { display: none; } /* Tabelle ausblenden */
+}
+
+/* Mobile pakete cards - hidden on desktop, shown on mobile */
+.pakete-mobile { display: none; }
+
+@media (max-width: 768px) {
+  .pakete-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .pm-card {
+    border: 1px solid #eee;
+    background: var(--white);
+  }
+
+  .pm-card-recommended {
+    border: 3px solid var(--gold);
+  }
+
+  .pm-badge {
+    background: var(--gold);
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .pm-head {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .pm-section {
+    background: var(--black);
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+  }
+
+  .pm-section-gold { background: var(--gold); }
+
+  .pm-list { padding: 16px 20px; }
+
+  .pm-foot { padding: 16px 20px; }
+}
