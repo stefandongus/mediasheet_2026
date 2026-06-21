@@ -1227,3 +1227,91 @@ blockquote.elementor-blockquote__content {
 .favr-list { height: auto !important; }
 .website-list { height: auto !important; }
 .paket-list { height: auto !important; min-height: unset !important; }
+
+/* ============================================
+   PAKETE: HTML Table - guaranteed alignment
+   ============================================ */
+.pakete-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 48px;
+}
+
+.pakete-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.pakete-table td {
+  width: 25%;
+  vertical-align: top;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  background: var(--white);
+  padding: 0;
+}
+
+/* Recommended column */
+.pt-recommended-col {
+  border: 3px solid var(--gold) !important;
+}
+
+/* Badge row */
+.pt-badge-row td { border: none; background: transparent; padding: 0; }
+.pt-badge-row .pt-recommended-col {
+  background: var(--gold);
+  border: 3px solid var(--gold) !important;
+  border-bottom: none !important;
+  padding: 8px;
+  text-align: center;
+}
+.pt-badge {
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Name/price row */
+.pt-name-row td { padding: 24px 20px 20px; vertical-align: top; }
+.pt-name {
+  font-family: "din-2014", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.pt-desc { font-size: 13px; color: var(--light); margin-bottom: 16px; line-height: 1.4; }
+.pt-price .price-num { font-family: "kings-caslon", Georgia, serif; font-size: 36px; }
+.pt-price .price-meta { font-size: 12px; color: var(--light); margin-top: 4px; }
+
+/* Section label rows */
+.pt-section-row td {
+  background: var(--black);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.pt-section-gold {
+  background: var(--gold) !important;
+  color: var(--white) !important;
+}
+
+/* List rows */
+.pt-list-row td { padding: 16px 20px; vertical-align: top; }
+.pt-list { list-style: none; padding: 0; margin: 0; }
+.pt-list li { font-size: 13px; padding: 5px 0; display: flex; gap: 8px; color: var(--mid); }
+.pt-list li.inactive { color: var(--xlight); }
+.pt-list .chk { color: var(--black); font-weight: 700; flex-shrink: 0; }
+.pt-list .x { color: var(--xlight); flex-shrink: 0; }
+
+/* Button row */
+.pt-btn-row td { padding: 16px 20px 20px; vertical-align: bottom; }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pakete-table { min-width: 600px; }
+}
