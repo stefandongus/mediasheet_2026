@@ -1178,3 +1178,20 @@ blockquote.elementor-blockquote__content {
 .paket-list {
   min-height: 220px;
 }
+
+/* Fix: Exact fixed height for both list sections so labels align perfectly */
+.paket-list {
+  min-height: unset;
+  height: 240px;
+  overflow: visible;
+}
+
+/* Website list is shorter - fixed height too */
+.paket-body .paket-section-label + .paket-list + .paket-section-label + .paket-list {
+  height: 180px;
+}
+
+/* Fix: Exact same height for both list types across all cards */
+.paket-list { height: auto; min-height: unset; }
+.favr-list { height: 230px; }
+.website-list { height: 190px; }
