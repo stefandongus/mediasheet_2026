@@ -1103,3 +1103,33 @@ blockquote.elementor-blockquote__content {
 
 /* Section nav sticky offset update */
 #section-nav { top: 80px; }
+
+/* Fix: Section labels padding + PREMIUM PRO border overflow */
+.paket-section-label {
+  padding: 10px 20px;
+}
+
+/* Fix: PREMIUM PRO border - use outline inside instead of box-shadow */
+.paket-card.recommended {
+  box-shadow: none;
+  outline: none;
+  border: 3px solid var(--gold) !important;
+  border-right: 3px solid var(--gold) !important;
+  margin: -1px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix: labels stay within card borders */
+.paket-card.recommended .paket-section-label,
+.paket-card.recommended .paket-badge {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* More padding on section labels */
+.paket-section-label {
+  padding: 10px 24px;
+  letter-spacing: 2px;
+}
