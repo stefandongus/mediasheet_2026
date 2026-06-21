@@ -836,13 +836,16 @@ footer {
 #oben .advantage-cards { grid-template-columns: 1fr 1fr; }
 #oben .stats-row { grid-template-columns: repeat(4, 1fr); }
 
-/* --- Vorteil 1: full width feature cards (no image) --- */
+/* --- Vorteil 1: 2-column layout with image --- */
 .favr-grid-wrap {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
 }
 .feature-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
@@ -858,27 +861,32 @@ blockquote.elementor-blockquote__content {
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   align-items: stretch;
+  border: 1px solid #eee;
 }
 
 .paket-card {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  border: 1px solid #eee;
-  border-right: none;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eee;
+  background: var(--white);
+  position: relative;
 }
-.paket-card:last-child { border-right: 1px solid #eee; }
-.paket-card.recommended { border: 3px solid var(--gold); }
+.paket-card:last-child { border-right: none; }
+.paket-card.recommended { outline: 3px solid var(--gold); outline-offset: -1px; }
 
 .paket-head {
   padding: 24px 20px 16px;
-  border-bottom: 1px solid var(--bg);
+  border-bottom: 1px solid #eee;
 }
 
 .paket-body {
   padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Section labels aligned */
+/* Section labels aligned using CSS subgrid trick - fixed height labels */
 .paket-section-label {
   font-size: 10px;
   font-weight: 700;
@@ -886,18 +894,28 @@ blockquote.elementor-blockquote__content {
   text-transform: uppercase;
   color: var(--white);
   background: var(--black);
-  padding: 8px 20px;
+  padding: 10px 20px;
   display: block;
 }
 
-.paket-card.recommended .paket-section-label:last-of-type {
+.paket-card.recommended .paket-section-label.website-label {
   background: var(--gold);
-  color: var(--white);
 }
 
 .paket-list {
-  padding: 12px 20px;
+  padding: 16px 20px;
   margin-bottom: 0;
+  flex: 1;
+}
+
+.paket-foot {
+  padding: 16px 20px;
+  margin-top: auto;
+}
+
+/* Force equal height for paket-head sections across all cards */
+.pakete-cards {
+  grid-template-rows: auto;
 }
 
 /* --- SCM: 2-row layout --- */
@@ -975,3 +993,50 @@ blockquote.elementor-blockquote__content {
   .pakete-cards { grid-template-columns: 1fr; }
   #oben .stats-row { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Empty list items for alignment */
+.paket-list li.empty { color: transparent; border: none; }
+
+/* Clean pakete card layout */
+.pakete-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #eee;
+  gap: 0;
+}
+
+.paket-card {
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+.paket-card:last-child { border-right: none; }
+.paket-card.recommended { box-shadow: inset 0 0 0 3px var(--gold); }
+
+.paket-badge {
+  background: var(--gold);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px;
+}
+
+.paket-section-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--black);
+  padding: 10px 20px;
+}
+
+.paket-card.recommended .website-label {
+  background: var(--gold);
+}
+
+.paket-foot { margin-top: auto; padding: 16px 20px; }
