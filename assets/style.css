@@ -1195,3 +1195,7 @@ blockquote.elementor-blockquote__content {
 .paket-list { height: auto; min-height: unset; }
 .favr-list { height: 230px; }
 .website-list { height: 190px; }
+
+/* Fix: Increase favr-list height to accommodate 6 items */
+.favr-list { height: 280px !important; }
+.website-list { height: 200px !important; }
