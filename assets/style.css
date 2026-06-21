@@ -1199,3 +1199,31 @@ blockquote.elementor-blockquote__content {
 /* Fix: Increase favr-list height to accommodate 6 items */
 .favr-list { height: 280px !important; }
 .website-list { height: 200px !important; }
+
+/* ============================================
+   PAKETE: Subgrid fix - the only reliable solution
+   ============================================ */
+
+.pakete-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto; /* rows defined by content of tallest cell */
+  gap: 0;
+  border: 1px solid #eee;
+  align-items: stretch;
+}
+
+.paket-card {
+  display: grid;
+  /* 6 rows: badge | head | favr-label | favr-list | website-label | website-list | foot */
+  grid-template-rows: subgrid;
+  grid-row: span 7;
+  border-right: 1px solid #eee;
+}
+.paket-card:last-child { border-right: none; }
+.paket-card.recommended { border: 3px solid var(--gold) !important; z-index: 1; }
+
+/* Reset fixed heights - subgrid handles alignment */
+.favr-list { height: auto !important; }
+.website-list { height: auto !important; }
+.paket-list { height: auto !important; min-height: unset !important; }
