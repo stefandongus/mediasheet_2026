@@ -1173,3 +1173,8 @@ blockquote.elementor-blockquote__content {
 
 /* Section nav sticky offset update */
 #section-nav { top: 90px; }
+
+/* Fix: Fixed height for paket list sections so labels align */
+.paket-list {
+  min-height: 220px;
+}
