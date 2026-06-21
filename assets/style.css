@@ -1040,3 +1040,66 @@ blockquote.elementor-blockquote__content {
 }
 
 .paket-foot { margin-top: auto; padding: 16px 20px; }
+
+/* Empty badge placeholder - same height as real badge, invisible */
+.paket-badge-empty {
+  background: transparent;
+  color: transparent;
+  pointer-events: none;
+}
+
+/* --- Nav updates: uppercase, larger logo, right group --- */
+#main-nav .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  gap: 24px;
+}
+
+#main-nav .logo img { height: 56px; width: auto; }
+
+#main-nav .nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+}
+
+#main-nav .nav-links a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: color 0.2s;
+}
+
+#main-nav .nav-links a:hover { color: var(--gold); }
+#main-nav .nav-links .active-page > a { color: var(--gold); }
+
+/* Right group: Optiker Login + Premium */
+.nav-right {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  list-style: none;
+  flex-shrink: 0;
+}
+
+.nav-right a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: color 0.2s;
+}
+
+.nav-right a:hover { color: var(--gold); }
+.nav-right .active-page > a { color: var(--gold); }
+
+/* Section nav sticky offset update */
+#section-nav { top: 80px; }
