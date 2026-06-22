@@ -1704,3 +1704,12 @@ blockquote.elementor-blockquote__content {
   .whp-left { border-right: none; border-bottom: 1px solid #eee; }
   .whp-right { grid-template-columns: 1fr; gap: 16px; }
 }
+
+/* Pakete description text */
+.pakete-desc {
+  font-size: 17px;
+  color: var(--mid);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
