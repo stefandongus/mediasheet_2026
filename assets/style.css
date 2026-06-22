@@ -1603,3 +1603,104 @@ blockquote.elementor-blockquote__content {
   .scm-cta-full { padding: 24px 20px; }
   .scm-cta-right { min-width: unset; width: 100%; }
 }
+
+/* ── Website & Hosting Promo Box ── */
+.website-hosting-promo {
+  margin: 48px 0;
+  border: 2px solid var(--gold);
+  background: var(--white);
+}
+
+.whp-badge {
+  background: var(--gold);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  display: inline-block;
+}
+
+.whp-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+}
+
+.whp-left {
+  padding: 32px;
+  border-right: 1px solid #eee;
+  background: var(--bg);
+}
+
+.whp-title {
+  font-family: "kings-caslon", Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.whp-price {
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.whp-includes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.whp-includes li {
+  font-size: 13px;
+  color: var(--mid);
+  padding: 4px 0;
+}
+
+.whp-includes li::before {
+  content: '· ';
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.whp-right {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 32px;
+}
+
+.whp-feature-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.whp-feature p {
+  font-size: 13px;
+  color: var(--mid);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 3-spaltige Tabelle */
+.pakete-table-3col td { width: 33.333%; }
+.pakete-table-3col .pt-name { font-size: 16px; letter-spacing: 2px; }
+.pakete-table-3col .pt-desc { font-size: 14px; }
+.pakete-table-3col .price-num { font-size: 40px; }
+.pakete-table-3col .pt-list li { font-size: 14px; }
+
+/* pakete-sub link */
+.pakete-sub a { color: var(--black); text-decoration: underline; }
+.pakete-sub { margin-bottom: 8px; font-size: 15px; color: var(--mid); }
+
+@media (max-width: 768px) {
+  .whp-body { grid-template-columns: 1fr; }
+  .whp-left { border-right: none; border-bottom: 1px solid #eee; }
+  .whp-right { grid-template-columns: 1fr; gap: 16px; }
+}
