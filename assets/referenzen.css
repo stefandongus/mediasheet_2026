@@ -285,3 +285,23 @@
   margin-top: 32px;
   display: inline-block;
 }
+
+/* Benefits: größere Schrift */
+.ref-benefits li {
+  font-size: 17px !important;
+}
+
+/* Optiker Login Bar unter den Referenzen */
+.ref-login-bar {
+  background: var(--white);
+  border-top: 1px solid #eee;
+  padding: 40px;
+}
+
+.ref-login-bar .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
