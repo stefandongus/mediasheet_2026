@@ -1519,3 +1519,23 @@ blockquote.elementor-blockquote__content {
 
   .pm-foot { padding: 16px 20px; }
 }
+
+/* Pakete: Intro-Text über der Tabelle */
+.pakete-intro {
+  font-size: 15px;
+  color: var(--mid);
+  margin-bottom: 32px;
+  max-width: 700px;
+}
+.pakete-intro a { color: var(--black); text-decoration: underline; }
+
+/* Pakete: 3-spaltige Tabelle – breitere Spalten, größere Schrift */
+.pakete-table-3col td { width: 33.333%; }
+.pakete-table-3col .pt-name { font-size: 18px; letter-spacing: 2.5px; }
+.pakete-table-3col .pt-desc { font-size: 14px; }
+.pakete-table-3col .price-num { font-size: 42px; }
+.pakete-table-3col .pt-list li { font-size: 15px; padding: 7px 0; }
+.pakete-table-3col .pt-section-row td { font-size: 12px; padding: 12px 24px; }
+.pakete-table-3col .pt-name-row td { padding: 28px 24px 20px; }
+.pakete-table-3col .pt-list-row td { padding: 20px 24px; }
+.pakete-table-3col .pt-btn-row td { padding: 20px 24px 24px; }
