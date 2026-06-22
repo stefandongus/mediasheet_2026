@@ -271,3 +271,17 @@
   .ref-ipad { padding: 20px; border-right: none; border-bottom: 1px solid #eee; }
   .ref-ipad-frame { max-width: 300px; }
 }
+
+/* Fix: keine Bullets vor den Benefits, mehr Abstand zum Button */
+.ref-benefits {
+  list-style: none !important;
+}
+
+.ref-benefits li::before {
+  content: none !important;
+}
+
+.ref-header .btn {
+  margin-top: 32px;
+  display: inline-block;
+}
