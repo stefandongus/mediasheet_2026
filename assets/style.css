@@ -1539,3 +1539,32 @@ blockquote.elementor-blockquote__content {
 .pakete-table-3col .pt-name-row td { padding: 28px 24px 20px; }
 .pakete-table-3col .pt-list-row td { padding: 20px 24px; }
 .pakete-table-3col .pt-btn-row td { padding: 20px 24px 24px; }
+
+/* Pakete intro: größere Schrift */
+.pakete-intro {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Pakete bonus box nach der Feature-Tabelle */
+.pakete-bonus {
+  margin-top: 48px;
+  padding: 32px 40px;
+  background: var(--bg2);
+  border-left: 4px solid var(--gold);
+}
+
+.pakete-bonus-title {
+  font-family: "kings-caslon", Georgia, serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: var(--black);
+}
+
+.pakete-bonus-text {
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.7;
+  max-width: 700px;
+}
