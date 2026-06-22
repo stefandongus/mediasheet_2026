@@ -305,3 +305,11 @@
   gap: 16px;
   align-items: center;
 }
+
+/* Header buttons nebeneinander */
+.ref-header-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
