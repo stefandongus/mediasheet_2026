@@ -60,27 +60,6 @@
   </div>
 </div>
 
-<!-- ========== MAIN NAV ========== -->
-<nav id="main-nav">
-  <div class="inner">
-    <a href="https://www.favrspecs.com/de/" class="logo">
-      <img src="https://blog.favrspecs.com/wp-content/uploads/2020/03/favr_logo_png.png" alt="FAVR Logo" width="130" height="63">
-    </a>
-    <button class="burger" id="burger-btn" aria-label="Menü öffnen">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="https://www.favrspecs.com/de/sonnenbrillen/">Sonnenbrillen</a></li>
-      <li><a href="https://www.favrspecs.com/de/optische-brillen/">Optische Brillen</a></li>
-      <li><a href="https://www.favrspecs.com/de/marken/">Brands</a></li>
-      <li><a href="https://www.favrspecs.com/de/optiker/">Optiker finden</a></li>
-      <li><a href="https://blog.favrspecs.com">Blog</a></li>
-      <li><a href="../../de/">Premium</a></li>
-      <li><a href="https://www.favrspecs.com/de/login/" class="btn btn-black btn-login" target="_blank">Optiker Login</a></li>
-    </ul>
-  </div>
-</nav>
-
 <!-- ========== PAGE HEADER ========== -->
 <header class="ref-header">
   <div class="inner">
@@ -94,7 +73,10 @@
       <li><span class="ref-check">✓</span> Keine Design- und Programmierkenntnisse notwendig</li>
       <li><span class="ref-check">✓</span> Module passen sich an das individuelle Design eurer Website an</li>
     </ul>
-    <a href="../../de/" class="btn btn-black">Mehr zu Premium &amp; Smart Content →</a>
+    <div class="ref-header-btns">
+      <a href="../../de/" class="btn btn-black">Mehr zu Premium &amp; Smart Content →</a>
+      <a href="https://www.favrspecs.com/de/login/" class="btn btn-outline" target="_blank">Optiker Login</a>
+    </div>
   </div>
 </header>
 
@@ -224,13 +206,7 @@
   </div>
 </section>
 
-<!-- ========== OPTIKER LOGIN CTA ========== -->
-<div class="ref-login-bar">
-  <div class="inner">
-    <a href="https://www.favrspecs.com/de/login/" class="btn btn-black" target="_blank">Optiker Login</a>
-    <a href="https://www.favrspecs.com/de/optiker/register/" class="btn btn-outline" target="_blank">Jetzt registrieren</a>
-  </div>
-</div>
+
 
 <!-- ========== FOOTER ========== -->
 <footer>
@@ -259,11 +235,6 @@
   <div class="footer-bottom">2019 © Monday Publishing</div>
 </footer>
 
-<script>
-  const burger = document.getElementById('burger-btn');
-  const navLinks = document.getElementById('nav-links');
-  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-</script>
+
 </body>
 </html>
