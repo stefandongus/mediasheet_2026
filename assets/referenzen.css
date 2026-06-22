@@ -188,3 +188,86 @@
   .ref-card-header { flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; }
   .ref-pages { padding: 20px; }
 }
+
+/* ── Benefits Liste im Header ── */
+.ref-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ref-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.4;
+}
+
+.ref-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ── iPad Mockup ── */
+.ref-ipad {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border-right: 1px solid #eee;
+}
+
+.ref-ipad-frame {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18), inset 0 0 0 1px #333;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+}
+
+.ref-ipad-frame::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: #333;
+  border-radius: 3px;
+  margin: 0 auto 10px;
+}
+
+.ref-ipad-screen {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.ref-ipad-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .ref-ipad { padding: 20px; border-right: none; border-bottom: 1px solid #eee; }
+  .ref-ipad-frame { max-width: 300px; }
+}
