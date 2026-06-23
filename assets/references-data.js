@@ -78,6 +78,22 @@ const FAVR_REFERENCES = [
         modules: ["Brand Slider", "Logo Wall", "Product Wall"]
       }
     ]
+  },
+  {
+    name: "Optik Augustin",
+    location: "Essen, Deutschland",
+    website: "https://optik-augustin.de/",
+    websiteLabel: "optik-augustin.de",
+    image: "../../assets/img/ref-augustin.png",
+    imageAlt: "Optik Augustin Website Screenshot",
+    imageModule: "Brand Slider",
+    pages: [
+      {
+        label: "Home",
+        url: "https://optik-augustin.de/",
+        modules: ["Brand Slider", "News Slider", "Product Wall"]
+      }
+    ]
   }
 ];
 
