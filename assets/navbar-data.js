@@ -72,6 +72,5 @@ function renderNavbarReferences() {
     </div>
   `).join('');
 }
-}
 
 document.addEventListener('DOMContentLoaded', renderNavbarReferences);
