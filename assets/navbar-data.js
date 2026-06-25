@@ -36,21 +36,10 @@ function renderNavbarReferences() {
   container.innerHTML = FAVR_NAVBAR_REFERENCES.map(ref => `
     <div class="ref-card ref-card-navbar">
       <div class="ref-navbar-image">
-        <div class="ref-ipad-stack">
-          <!-- Hinteres iPad: Original-Website -->
-          <div class="ref-ipad ref-ipad-back">
-            <div class="ref-ipad-frame">
-              <div class="ref-ipad-screen">
-                <img src="${ref.imageOriginal}" alt="Original website" loading="lazy">
-              </div>
-            </div>
-          </div>
-          <!-- Vorderes iPad: nachgebaute Navbar -->
-          <div class="ref-ipad ref-ipad-front">
-            <div class="ref-ipad-frame">
-              <div class="ref-ipad-screen">
-                <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
-              </div>
+        <div class="ref-ipad">
+          <div class="ref-ipad-frame">
+            <div class="ref-ipad-screen">
+              <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
             </div>
           </div>
         </div>
