@@ -496,3 +496,56 @@
   .ref-ipad-stack { padding-top: 40px; }
   .ref-ipad-front { margin-top: 32px; }
 }
+
+/* ── Stacked iPads v2: links versetzt, nahtlos ── */
+.ref-ipad-stack {
+  position: relative;
+  padding-top: 0;
+  padding-left: 40px; /* Platz für das hintere iPad links */
+  min-height: 500px;
+}
+
+.ref-ipad-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  transform: none;
+  z-index: 1;
+  opacity: 1;
+}
+
+.ref-ipad-back .ref-ipad-frame {
+  max-width: 100%;
+}
+
+/* Hinteres iPad: nur Navbar-Streifen sichtbar */
+.ref-ipad-back .ref-ipad-screen {
+  max-height: 72px;
+  overflow: hidden;
+}
+
+.ref-ipad-back .ref-ipad-screen img {
+  object-position: top;
+  width: 100%;
+}
+
+/* Vorderes iPad: rechts versetzt, kleiner Schatten als Lichtkante */
+.ref-ipad-front {
+  position: absolute;
+  top: 50px; /* leicht unterhalb des hinteren */
+  left: 40px;
+  right: 0;
+  z-index: 2;
+  box-shadow: -3px 0 8px rgba(0,0,0,0.15);
+}
+
+.ref-ipad-front .ref-ipad-frame {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .ref-ipad-stack { padding-left: 20px; min-height: 400px; }
+  .ref-ipad-back { width: calc(100% - 20px); }
+  .ref-ipad-front { left: 20px; top: 40px; }
+}
