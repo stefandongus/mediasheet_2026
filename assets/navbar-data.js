@@ -52,19 +52,19 @@ function renderNavbarReferences() {
           <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
         </div>
         <div class="ref-navbar-items">
-          <div class="ref-navbar-items-label">Menu items in navigation</div>
+          <div class="ref-navbar-items-label">Original navigation bar</div>
           ${ref.navItems.map(item => `
             <a href="${item.url}" class="ref-navbar-item" target="_blank">
-              <span class="ref-navbar-item-name">${item.label}</span>
+              <span class="ref-navbar-item-name">→ click on "${item.label}"</span>
               <span class="ref-navbar-item-arrow">↗</span>
             </a>
           `).join('')}
         </div>
         ${ref.example ? `
         <div class="ref-navbar-example-block">
-          <div class="ref-navbar-items-label">Example for landing page</div>
+          <div class="ref-navbar-items-label">Replicated navigation bar</div>
           <a href="${ref.example.url}" class="ref-navbar-item" target="_blank">
-            <span class="ref-navbar-item-name">${ref.example.label}</span>
+            <span class="ref-navbar-item-name">→ example: ${ref.example.label}</span>
             <span class="ref-navbar-item-arrow">↗</span>
           </a>
         </div>` : ''}
