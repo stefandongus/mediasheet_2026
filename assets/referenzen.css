@@ -446,3 +446,8 @@
 .ref-navbar-example-block {
   margin-top: 8px;
 }
+
+/* Navbar card: larger image, narrower text */
+.ref-card-navbar {
+  grid-template-columns: 2fr 1fr !important;
+}

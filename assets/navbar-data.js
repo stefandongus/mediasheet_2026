@@ -44,12 +44,9 @@ function renderNavbarReferences() {
         </div>
       </div>
       <div class="ref-navbar-info">
-        <div class="ref-navbar-header">
-          <div>
-            <h2 class="ref-name">${ref.name}</h2>
-            <span class="ref-location">${ref.location}</span>
-          </div>
-          <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
+        <div>
+          <h2 class="ref-name">${ref.name}</h2>
+          <span class="ref-location">${ref.location}</span>
         </div>
         <div class="ref-navbar-items">
           <div class="ref-navbar-items-label">Original navigation bar</div>
