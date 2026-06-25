@@ -12,9 +12,13 @@ const FAVR_NAVBAR_REFERENCES = [
     websiteLabel: "eurooptica.com",
     image: "../../assets/img/ref-navbar-eurooptica.png",
     imageAlt: "EuroOptica Custom Navbar Screenshot",
-    description: "Top navigation bar with menu items",
-    pageLabel: "Brand Profile",
-    pageUrl: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/brands/barton-perreira/66/",
+    navItems: [
+      { label: "Try-On", url: "https://www.eurooptica.com/" }
+    ],
+    example: {
+      label: "Brand Profile",
+      url: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/brands/barton-perreira/66/"
+    }
   }
 ];
 
@@ -47,14 +51,27 @@ function renderNavbarReferences() {
           </div>
           <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
         </div>
-        <p class="ref-navbar-desc">${ref.description}</p>
-        <div class="ref-navbar-example">
-          <span class="ref-navbar-example-label">Example</span>
-          <a href="${ref.pageUrl}" class="ref-page-link" target="_blank">${ref.pageLabel}</a>
+        <div class="ref-navbar-items">
+          <div class="ref-navbar-items-label">Menu items in navigation</div>
+          ${ref.navItems.map(item => `
+            <a href="${item.url}" class="ref-navbar-item" target="_blank">
+              <span class="ref-navbar-item-name">${item.label}</span>
+              <span class="ref-navbar-item-arrow">↗</span>
+            </a>
+          `).join('')}
         </div>
+        ${ref.example ? `
+        <div class="ref-navbar-example-block">
+          <div class="ref-navbar-items-label">Example for landing page</div>
+          <a href="${ref.example.url}" class="ref-navbar-item" target="_blank">
+            <span class="ref-navbar-item-name">${ref.example.label}</span>
+            <span class="ref-navbar-item-arrow">↗</span>
+          </a>
+        </div>` : ''}
       </div>
     </div>
   `).join('');
+}
 }
 
 document.addEventListener('DOMContentLoaded', renderNavbarReferences);

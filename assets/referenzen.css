@@ -400,3 +400,49 @@
 .ref-navbar-image img {
   object-fit: unset;
 }
+
+/* Navbar items list */
+.ref-navbar-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ref-navbar-items-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 12px;
+}
+
+.ref-navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ref-navbar-item:first-of-type { border-top: 1px solid #eee; }
+
+.ref-navbar-item-name {
+  font-family: "kings-caslon", Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.ref-navbar-item:hover .ref-navbar-item-name { color: var(--gold); }
+
+.ref-navbar-item-arrow {
+  font-size: 14px;
+  color: var(--mid);
+}
+
+.ref-navbar-example-block {
+  margin-top: 8px;
+}
