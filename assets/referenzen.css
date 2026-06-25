@@ -554,3 +554,10 @@
 #navbar-cards-container .ref-card {
   margin-bottom: 48px;
 }
+
+/* Spacing between navbar cards - override */
+#navbar-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
