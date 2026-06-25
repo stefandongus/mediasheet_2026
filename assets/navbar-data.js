@@ -12,7 +12,8 @@ const FAVR_NAVBAR_REFERENCES = [
     websiteLabel: "eurooptica.com",
     image: "../../assets/img/ref-navbar-eurooptica.png",
     imageAlt: "EuroOptica Custom Navbar Screenshot",
-    pageLabel: "Barton Perreira Brand Profile",
+    description: "Top navigation bar with menu items",
+    pageLabel: "Brand Profile",
     pageUrl: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/brands/barton-perreira/66/",
   }
 ];
@@ -28,28 +29,22 @@ function renderNavbarReferences() {
   }
 
   container.innerHTML = FAVR_NAVBAR_REFERENCES.map(ref => `
-    <div class="ref-card">
-      <div class="ref-card-header">
-        <div class="ref-meta">
-          <h2 class="ref-name">${ref.name}</h2>
-          <span class="ref-location">${ref.location}</span>
-        </div>
-        <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
+    <div class="ref-card ref-card-navbar">
+      <div class="ref-navbar-image">
+        <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
       </div>
-      <div class="ref-body">
-        <div class="ref-ipad">
-          <div class="ref-ipad-frame">
-            <div class="ref-ipad-screen">
-              <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
-            </div>
+      <div class="ref-navbar-info">
+        <div class="ref-navbar-header">
+          <div>
+            <h2 class="ref-name">${ref.name}</h2>
+            <span class="ref-location">${ref.location}</span>
           </div>
+          <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
         </div>
-        <div class="ref-pages">
-          <div class="ref-page">
-            <div class="ref-page-top">
-              <a href="${ref.pageUrl}" class="ref-page-link" target="_blank">${ref.pageLabel}</a>
-            </div>
-          </div>
+        <p class="ref-navbar-desc">${ref.description}</p>
+        <div class="ref-navbar-example">
+          <span class="ref-navbar-example-label">Beispiel</span>
+          <a href="${ref.pageUrl}" class="ref-page-link" target="_blank">${ref.pageLabel}</a>
         </div>
       </div>
     </div>
