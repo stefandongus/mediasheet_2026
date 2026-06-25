@@ -35,6 +35,21 @@ const FAVR_NAVBAR_REFERENCES = [
       label: "product page",
       url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/brands/goetti/39/eyeglasses/acero/3877/"
     }
+  },
+  {
+    name: "Augustin Optik Lounge",
+    location: "Essen, Germany",
+    website: "https://optik-augustin.de/",
+    websiteLabel: "optik-augustin.de",
+    image: "../../assets/img/ref-navbar-augustin.png",
+    imageAlt: "Augustin Optik Lounge Custom Navbar Screenshot",
+    navItems: [
+      { label: "ONLINE BRILLENANPROBE", url: "https://optik-augustin.de/" }
+    ],
+    example: {
+      label: "virtual try-on",
+      url: "https://www.favrspecs.com/de/optiker/in/essen/213/augustin-optik-lounge/10137/pro/marken/lindberg/119/optische-brillen/1055/4166/"
+    }
   }
 ];
 
