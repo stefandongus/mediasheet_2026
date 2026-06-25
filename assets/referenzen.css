@@ -460,3 +460,39 @@
 .ref-card-navbar .ref-navbar-image {
   padding: 20px;
 }
+
+/* ── Stacked iPads ── */
+.ref-ipad-stack {
+  position: relative;
+  width: 100%;
+  padding-top: 60px; /* Platz für das hintere iPad oben */
+}
+
+/* Hinteres iPad – nur oberer Teil sichtbar */
+.ref-ipad-back {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.88);
+  transform-origin: top center;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.ref-ipad-back .ref-ipad-screen {
+  max-height: 80px;
+  overflow: hidden;
+}
+
+/* Vorderes iPad – vollständig sichtbar */
+.ref-ipad-front {
+  position: relative;
+  z-index: 2;
+  margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+  .ref-ipad-stack { padding-top: 40px; }
+  .ref-ipad-front { margin-top: 32px; }
+}
