@@ -451,3 +451,12 @@
 .ref-card-navbar {
   grid-template-columns: 2fr 1fr !important;
 }
+
+/* Navbar card: larger iPad frame */
+.ref-card-navbar .ref-ipad-frame {
+  max-width: 100%;
+}
+
+.ref-card-navbar .ref-navbar-image {
+  padding: 20px;
+}
