@@ -384,3 +384,19 @@
   .ref-card-navbar { grid-template-columns: 1fr; }
   .ref-navbar-image { border-right: none; border-bottom: 1px solid #eee; max-height: 260px; }
 }
+
+/* Navbar image: padding for iPad frame */
+.ref-navbar-image {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border-right: 1px solid #eee;
+  max-height: unset;
+  overflow: visible;
+}
+
+.ref-navbar-image img {
+  object-fit: unset;
+}

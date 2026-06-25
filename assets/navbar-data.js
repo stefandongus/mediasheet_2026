@@ -31,7 +31,13 @@ function renderNavbarReferences() {
   container.innerHTML = FAVR_NAVBAR_REFERENCES.map(ref => `
     <div class="ref-card ref-card-navbar">
       <div class="ref-navbar-image">
-        <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
+        <div class="ref-ipad">
+          <div class="ref-ipad-frame">
+            <div class="ref-ipad-screen">
+              <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="ref-navbar-info">
         <div class="ref-navbar-header">
@@ -43,7 +49,7 @@ function renderNavbarReferences() {
         </div>
         <p class="ref-navbar-desc">${ref.description}</p>
         <div class="ref-navbar-example">
-          <span class="ref-navbar-example-label">Beispiel</span>
+          <span class="ref-navbar-example-label">Example</span>
           <a href="${ref.pageUrl}" class="ref-page-link" target="_blank">${ref.pageLabel}</a>
         </div>
       </div>
