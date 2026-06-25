@@ -20,6 +20,21 @@ const FAVR_NAVBAR_REFERENCES = [
       label: "Brand Profile",
       url: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/brands/barton-perreira/66/"
     }
+  },
+  {
+    name: "Volz",
+    location: "Thun, Switzerland",
+    website: "https://www.volz.ch/",
+    websiteLabel: "volz.ch",
+    image: "../../assets/img/ref-navbar-volz.png",
+    imageAlt: "Volz Custom Navbar Screenshot",
+    navItems: [
+      { label: "Brillen online anprobieren", url: "https://www.volz.ch/" }
+    ],
+    example: {
+      label: "product page",
+      url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/brands/goetti/39/eyeglasses/acero/3877/"
+    }
   }
 ];
 
