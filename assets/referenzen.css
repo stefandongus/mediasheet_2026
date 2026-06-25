@@ -549,3 +549,8 @@
   .ref-ipad-back { width: calc(100% - 20px); }
   .ref-ipad-front { left: 20px; top: 40px; }
 }
+
+/* More spacing between navbar cards */
+#navbar-cards-container .ref-card {
+  margin-bottom: 48px;
+}
