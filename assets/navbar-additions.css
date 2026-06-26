@@ -1,0 +1,39 @@
+/* ============================================
+   NAVBAR CARD – Overrides (ans Ende der
+   referenzen.css anfügen)
+   ============================================ */
+
+/* Linke Seite: Foto direkt, weißer Hintergrund */
+.ref-card-navbar {
+  grid-template-columns: 2fr 1fr !important;
+}
+
+.ref-navbar-image {
+  background: #ffffff;
+  display: block;
+  padding: 0;
+  border-right: 1px solid #eee;
+  overflow: hidden;
+  max-height: unset;
+}
+
+.ref-navbar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Rechte Seite: leicht grau */
+.ref-navbar-info {
+  background: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .ref-navbar-image {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    max-height: 260px;
+  }
+}
