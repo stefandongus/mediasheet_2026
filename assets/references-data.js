@@ -1,140 +1,150 @@
 /* ============================================
-   FAVR References Data
+   FAVR Navbar References Data
    Neue Referenz hinzufügen: einfach neues
    Objekt in das Array einfügen.
    ============================================ */
-
-const FAVR_REFERENCES = [
+const FAVR_NAVBAR_REFERENCES = [
+  {
+    name: "EuroOptica",
+    location: "New York City, USA",
+    website: "https://www.eurooptica.com/",
+    websiteLabel: "eurooptica.com",
+    image: "../../assets/img/ref-navbar-eurooptica.png",
+    imageAlt: "EuroOptica Custom Navbar Screenshot",
+    navItems: [
+      { label: "Try-On", url: "https://www.eurooptica.com/" }
+    ],
+    example: {
+      label: "Brand Profile",
+      url: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/brands/barton-perreira/66/"
+    }
+  },
+  {
+    name: "Volz",
+    location: "Thun, Switzerland",
+    website: "https://www.volz.ch/",
+    websiteLabel: "volz.ch",
+    image: "../../assets/img/ref-navbar-volz.png",
+    imageAlt: "Volz Custom Navbar Screenshot",
+    navItems: [
+      { label: "Brillen online anprobieren", url: "https://www.volz.ch/" }
+    ],
+    example: {
+      label: "product page",
+      url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/brands/goetti/39/eyeglasses/acero/3877/"
+    }
+  },
   {
     name: "Optik Schade",
-    location: "Viersen, Deutschland",
+    location: "Viersen, Germany",
     website: "https://optikschade.com/",
     websiteLabel: "optikschade.com",
-    image: "../../assets/img/ref-optikschade.png",
-    imageAlt: "Optik Schade Website Screenshot",
-    imageModule: "Brand Slider",
-    pages: [
-      {
-        label: "Home",
-        url: "https://optikschade.com/",
-        modules: ["Brand Slider", "Product Wall", "News Slider"]
-      },
-      {
-        label: "Brillenmarken",
-        url: "https://optikschade.com/brillenmarken/",
-        modules: ["Logo Wall", "Brand Wall"]
-      }
-    ]
+    image: "../../assets/img/ref-navbar-schade.png",
+    imageAlt: "Optik Schade Custom Navbar Screenshot",
+    navItems: [
+      { label: "Brand Slider", url: "https://optikschade.com/" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/viersen/511/optik-akustik-schade/21803/pro/marken/andy-wolf/102/"
+    }
   },
   {
-    name: "Augenoptik Hensler",
-    location: "Frankfurt, Deutschland",
-    website: "https://www.optik-hensler.de/",
+    name: "Optik Hensler",
+    location: "Frankfurt, Germany",
+    website: "https://www.optik-hensler.de/leistungen/mode",
     websiteLabel: "optik-hensler.de",
-    image: "../../assets/img/ref-hensler.png",
-    imageAlt: "Augenoptik Hensler Website Screenshot",
-    imageModule: "Brand Wall",
-    pages: [
-      {
-        label: "Brillenmode",
-        url: "https://www.optik-hensler.de/leistungen/mode",
-        modules: ["Brand Slider", "Brand Wall", "Product Wall Optical", "Product Wall Sun", "News Slider", "Logo Wall"]
-      }
-    ]
+    image: "../../assets/img/ref-navbar-hensler.png",
+    imageAlt: "Optik Hensler Custom Navbar Screenshot",
+    navItems: [
+      { label: "Blackfin", url: "https://www.optik-hensler.de/leistungen/mode" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/frankfurt-am-main/214/augenoptik-hensler/24996/pro/marken/blackfin/41/"
+    }
   },
   {
-    name: "Optik Leonhardt",
-    location: "Bretten, Deutschland",
-    website: "https://www.optik-leonhardt.de/",
-    websiteLabel: "optik-leonhardt.de",
-    image: "../../assets/img/ref-leonhardt.png",
-    imageAlt: "Optik Leonhardt Website Screenshot",
-    imageModule: "News Slider",
-    pages: [
-      {
-        label: "Home",
-        url: "https://www.optik-leonhardt.de/",
-        modules: ["Brand Slider", "News Slider", "Product Wall"]
-      },
-      {
-        label: "Brillen",
-        url: "https://www.optik-leonhardt.de/brillen/",
-        modules: ["Logo Wall"]
-      }
-    ]
+    name: "Richtig! Kühn",
+    location: "Jena, Germany",
+    website: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/",
+    websiteLabel: "richtigkuehn.de",
+    image: "../../assets/img/ref-navbar-kuehn.png",
+    imageAlt: "Richtig! Kühn Custom Navbar Screenshot",
+    navItems: [
+      { label: "Suzy Glam", url: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/jena/826/richtig-kuehn/16431/pro/marken/suzy-glam/131/"
+    }
   },
   {
-    name: "Gutsch Optik",
-    location: "München, Deutschland",
-    website: "https://gutsch-optik.de/",
-    websiteLabel: "gutsch-optik.de",
-    image: "../../assets/img/ref-gutsch.png",
-    imageAlt: "Gutsch Optik Website Screenshot",
-    imageModule: "Product Wall",
-    pages: [
-      {
-        label: "Home",
-        url: "https://gutsch-optik.de/",
-        modules: ["Brand Slider", "Logo Wall", "Product Wall"]
-      }
-    ]
-  },
-  {
-    name: "Optik Augustin",
-    location: "Essen, Deutschland",
+    name: "Augustin Optik Lounge",
+    location: "Essen, Germany",
     website: "https://optik-augustin.de/",
     websiteLabel: "optik-augustin.de",
-    image: "../../assets/img/ref-augustin.png",
-    imageAlt: "Optik Augustin Website Screenshot",
-    imageModule: "Brand Slider",
-    pages: [
-      {
-        label: "Home",
-        url: "https://optik-augustin.de/",
-        modules: ["Brand Slider", "News Slider", "Product Wall"]
-      }
-    ]
+    image: "../../assets/img/ref-navbar-augustin.png",
+    imageAlt: "Augustin Optik Lounge Custom Navbar Screenshot",
+    navItems: [
+      { label: "ONLINE BRILLENANPROBE", url: "https://optik-augustin.de/" }
+    ],
+    example: {
+      label: "virtual try-on",
+      url: "https://www.favrspecs.com/de/optiker/in/essen/213/augustin-optik-lounge/10137/pro/marken/lindberg/119/optische-brillen/1055/4166/"
+    }
   }
 ];
 
 /* ── Render function ── */
-function renderReferences() {
-  const container = document.getElementById('ref-cards-container');
+function renderNavbarReferences() {
+  const container = document.getElementById('navbar-cards-container');
   if (!container) return;
-
-  container.innerHTML = FAVR_REFERENCES.map(ref => `
-    <div class="ref-card">
-      <div class="ref-card-header">
-        <div class="ref-meta">
+  if (FAVR_NAVBAR_REFERENCES.length === 0) {
+    container.innerHTML = '<p class="ref-placeholder">Referenzen folgen in Kürze.</p>';
+    return;
+  }
+  container.innerHTML = FAVR_NAVBAR_REFERENCES.map(ref => `
+    <div class="ref-card ref-card-navbar">
+      <div class="ref-navbar-image">
+        <div class="ref-ipad">
+          <div class="ref-ipad-frame">
+            <div class="ref-ipad-screen ref-ipad-placeholder">
+              <div class="ref-placeholder-inner">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5">
+                  <rect x="5" y="2" width="14" height="20" rx="2"/>
+                  <circle cx="12" cy="18" r="1"/>
+                </svg>
+                <span>Foto folgt</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ref-navbar-info">
+        <div>
           <h2 class="ref-name">${ref.name}</h2>
           <span class="ref-location">${ref.location}</span>
         </div>
-        <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
-      </div>
-      <div class="ref-body">
-        <div class="ref-ipad">
-          <div class="ref-ipad-frame">
-            <div class="ref-ipad-screen">
-              <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
-            </div>
-          </div>
-          <div class="ref-ipad-label">${ref.imageModule}</div>
-        </div>
-        <div class="ref-pages">
-          ${ref.pages.map(page => `
-            <div class="ref-page">
-              <div class="ref-page-top">
-                <a href="${page.url}" class="ref-page-link" target="_blank">${page.label}</a>
-                <div class="ref-modules">
-                  ${page.modules.map(m => `<span class="ref-tag">${m}</span>`).join('')}
-                </div>
-              </div>
-            </div>
+        <div class="ref-navbar-items">
+          <div class="ref-navbar-items-label">Original navigation bar</div>
+          ${ref.navItems.map(item => `
+            <a href="${item.url}" class="ref-navbar-item" target="_blank">
+              <span class="ref-navbar-item-name">→ click on "${item.label}"</span>
+              <span class="ref-navbar-item-arrow">↗</span>
+            </a>
           `).join('')}
         </div>
+        ${ref.example ? `
+        <div class="ref-navbar-example-block">
+          <div class="ref-navbar-items-label">Replicated navigation bar</div>
+          <a href="${ref.example.url}" class="ref-navbar-item" target="_blank">
+            <span class="ref-navbar-item-name">→ example: ${ref.example.label}</span>
+            <span class="ref-navbar-item-arrow">↗</span>
+          </a>
+        </div>` : ''}
       </div>
     </div>
   `).join('');
 }
-
-document.addEventListener('DOMContentLoaded', renderReferences);
+document.addEventListener('DOMContentLoaded', renderNavbarReferences);

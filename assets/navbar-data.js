@@ -3,7 +3,6 @@
    Neue Referenz hinzufügen: einfach neues
    Objekt in das Array einfügen.
    ============================================ */
-
 const FAVR_NAVBAR_REFERENCES = [
   {
     name: "EuroOptica",
@@ -11,7 +10,6 @@ const FAVR_NAVBAR_REFERENCES = [
     website: "https://www.eurooptica.com/",
     websiteLabel: "eurooptica.com",
     image: "../../assets/img/ref-navbar-eurooptica.png",
-    imageOriginal: "../../assets/img/ref-navbar-eurooptica-original.png",
     imageAlt: "EuroOptica Custom Navbar Screenshot",
     navItems: [
       { label: "Try-On", url: "https://www.eurooptica.com/" }
@@ -37,6 +35,51 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
+    name: "Optik Schade",
+    location: "Viersen, Germany",
+    website: "https://optikschade.com/",
+    websiteLabel: "optikschade.com",
+    image: "../../assets/img/ref-navbar-schade.png",
+    imageAlt: "Optik Schade Custom Navbar Screenshot",
+    navItems: [
+      { label: "Brand Slider", url: "https://optikschade.com/" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/viersen/511/optik-akustik-schade/21803/pro/marken/andy-wolf/102/"
+    }
+  },
+  {
+    name: "Optik Hensler",
+    location: "Frankfurt, Germany",
+    website: "https://www.optik-hensler.de/leistungen/mode",
+    websiteLabel: "optik-hensler.de",
+    image: "../../assets/img/ref-navbar-hensler.png",
+    imageAlt: "Optik Hensler Custom Navbar Screenshot",
+    navItems: [
+      { label: "Blackfin", url: "https://www.optik-hensler.de/leistungen/mode" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/frankfurt-am-main/214/augenoptik-hensler/24996/pro/marken/blackfin/41/"
+    }
+  },
+  {
+    name: "Richtig! Kühn",
+    location: "Jena, Germany",
+    website: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/",
+    websiteLabel: "richtigkuehn.de",
+    image: "../../assets/img/ref-navbar-kuehn.png",
+    imageAlt: "Richtig! Kühn Custom Navbar Screenshot",
+    navItems: [
+      { label: "Suzy Glam", url: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/jena/826/richtig-kuehn/16431/pro/marken/suzy-glam/131/"
+    }
+  },
+  {
     name: "Augustin Optik Lounge",
     location: "Essen, Germany",
     website: "https://optik-augustin.de/",
@@ -57,19 +100,23 @@ const FAVR_NAVBAR_REFERENCES = [
 function renderNavbarReferences() {
   const container = document.getElementById('navbar-cards-container');
   if (!container) return;
-
   if (FAVR_NAVBAR_REFERENCES.length === 0) {
     container.innerHTML = '<p class="ref-placeholder">Referenzen folgen in Kürze.</p>';
     return;
   }
-
   container.innerHTML = FAVR_NAVBAR_REFERENCES.map(ref => `
     <div class="ref-card ref-card-navbar">
       <div class="ref-navbar-image">
         <div class="ref-ipad">
           <div class="ref-ipad-frame">
-            <div class="ref-ipad-screen">
-              <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
+            <div class="ref-ipad-screen ref-ipad-placeholder">
+              <div class="ref-placeholder-inner">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5">
+                  <rect x="5" y="2" width="14" height="20" rx="2"/>
+                  <circle cx="12" cy="18" r="1"/>
+                </svg>
+                <span>Foto folgt</span>
+              </div>
             </div>
           </div>
         </div>
@@ -100,5 +147,4 @@ function renderNavbarReferences() {
     </div>
   `).join('');
 }
-
 document.addEventListener('DOMContentLoaded', renderNavbarReferences);
