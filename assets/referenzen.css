@@ -191,7 +191,7 @@
 
 /* ── Benefits Liste im Header ── */
 .ref-benefits {
-  list-style: none;
+  list-style: none !important;
   padding: 0;
   margin: 0 0 32px 0;
   display: flex;
@@ -203,9 +203,13 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 15px;
+  font-size: 17px !important;
   color: var(--mid);
   line-height: 1.4;
+}
+
+.ref-benefits li::before {
+  content: none !important;
 }
 
 .ref-check {
@@ -222,7 +226,7 @@
   flex-shrink: 0;
 }
 
-/* ── iPad Mockup ── */
+/* ── iPad Mockup (references page) ── */
 .ref-ipad {
   background: #f0f0f0;
   display: flex;
@@ -272,26 +276,13 @@
   .ref-ipad-frame { max-width: 300px; }
 }
 
-/* Fix: keine Bullets vor den Benefits, mehr Abstand zum Button */
-.ref-benefits {
-  list-style: none !important;
-}
-
-.ref-benefits li::before {
-  content: none !important;
-}
-
+/* ── Header ── */
 .ref-header .btn {
   margin-top: 32px;
   display: inline-block;
 }
 
-/* Benefits: größere Schrift */
-.ref-benefits li {
-  font-size: 17px !important;
-}
-
-/* Optiker Login Bar unter den Referenzen */
+/* Optiker Login Bar */
 .ref-login-bar {
   background: var(--white);
   border-top: 1px solid #eee;
@@ -328,14 +319,18 @@
 /* ── Navbar Reference Card ── */
 .ref-card-navbar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 0;
 }
 
+/* Linke Seite: Foto direkt auf weißem Hintergrund */
 .ref-navbar-image {
-  overflow: hidden;
-  max-height: 420px;
+  background: #ffffff;
+  display: block;
+  padding: 0;
   border-right: 1px solid #eee;
+  overflow: hidden;
+  max-height: unset;
 }
 
 .ref-navbar-image img {
@@ -346,7 +341,9 @@
   display: block;
 }
 
+/* Rechte Seite: leicht grau */
 .ref-navbar-info {
+  background: #f7f7f7;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -378,27 +375,6 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--mid);
-}
-
-@media (max-width: 768px) {
-  .ref-card-navbar { grid-template-columns: 1fr; }
-  .ref-navbar-image { border-right: none; border-bottom: 1px solid #eee; max-height: 260px; }
-}
-
-/* Navbar image: padding for iPad frame */
-.ref-navbar-image {
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px;
-  border-right: 1px solid #eee;
-  max-height: unset;
-  overflow: visible;
-}
-
-.ref-navbar-image img {
-  object-fit: unset;
 }
 
 /* Navbar items list */
@@ -447,115 +423,13 @@
   margin-top: 8px;
 }
 
-/* Navbar card: larger image, narrower text */
-.ref-card-navbar {
-  grid-template-columns: 2fr 1fr !important;
-}
-
-/* Navbar card: larger iPad frame */
-.ref-card-navbar .ref-ipad-frame {
-  max-width: 100%;
-}
-
-.ref-card-navbar .ref-navbar-image {
-  padding: 20px;
-}
-
-/* ── Stacked iPads ── */
-.ref-ipad-stack {
-  position: relative;
-  width: 100%;
-  padding-top: 60px; /* Platz für das hintere iPad oben */
-}
-
-/* Hinteres iPad – nur oberer Teil sichtbar */
-.ref-ipad-back {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) scale(0.88);
-  transform-origin: top center;
-  width: 100%;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.ref-ipad-back .ref-ipad-screen {
-  max-height: 80px;
-  overflow: hidden;
-}
-
-/* Vorderes iPad – vollständig sichtbar */
-.ref-ipad-front {
-  position: relative;
-  z-index: 2;
-  margin-top: 48px;
-}
-
+/* Mobile */
 @media (max-width: 768px) {
-  .ref-ipad-stack { padding-top: 40px; }
-  .ref-ipad-front { margin-top: 32px; }
+  .ref-card-navbar { grid-template-columns: 1fr; }
+  .ref-navbar-image { border-right: none; border-bottom: 1px solid #eee; max-height: 260px; }
 }
 
-/* ── Stacked iPads v2: links versetzt, nahtlos ── */
-.ref-ipad-stack {
-  position: relative;
-  padding-top: 0;
-  padding-left: 40px; /* Platz für das hintere iPad links */
-  min-height: 500px;
-}
-
-.ref-ipad-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 40px);
-  transform: none;
-  z-index: 1;
-  opacity: 1;
-}
-
-.ref-ipad-back .ref-ipad-frame {
-  max-width: 100%;
-}
-
-/* Hinteres iPad: nur Navbar-Streifen sichtbar */
-.ref-ipad-back .ref-ipad-screen {
-  max-height: 72px;
-  overflow: hidden;
-}
-
-.ref-ipad-back .ref-ipad-screen img {
-  object-position: top;
-  width: 100%;
-}
-
-/* Vorderes iPad: rechts versetzt, kleiner Schatten als Lichtkante */
-.ref-ipad-front {
-  position: absolute;
-  top: 50px; /* leicht unterhalb des hinteren */
-  left: 40px;
-  right: 0;
-  z-index: 2;
-  box-shadow: -3px 0 8px rgba(0,0,0,0.15);
-}
-
-.ref-ipad-front .ref-ipad-frame {
-  max-width: 100%;
-}
-
-@media (max-width: 768px) {
-  .ref-ipad-stack { padding-left: 20px; min-height: 400px; }
-  .ref-ipad-back { width: calc(100% - 20px); }
-  .ref-ipad-front { left: 20px; top: 40px; }
-}
-
-/* More spacing between navbar cards */
-#navbar-cards-container .ref-card {
-  margin-bottom: 48px;
-}
-
-/* Spacing between navbar cards - override */
+/* Spacing between navbar cards */
 #navbar-cards-container {
   display: flex;
   flex-direction: column;
