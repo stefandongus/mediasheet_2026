@@ -69,7 +69,7 @@ const FAVR_NAVBAR_REFERENCES = [
     location: "Jena, Germany",
     website: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/",
     websiteLabel: "richtigkuehn.de",
-    image: "../../assets/img/ref-navbar-kuehn.png",
+    image: "../../assets/img/ref-navbar-richtigkühn.png",
     imageAlt: "Richtig! Kühn Custom Navbar Screenshot",
     navItems: [
       { label: "Suzy Glam", url: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/" }
@@ -109,14 +109,8 @@ function renderNavbarReferences() {
       <div class="ref-navbar-image">
         <div class="ref-ipad">
           <div class="ref-ipad-frame">
-            <div class="ref-ipad-screen ref-ipad-placeholder">
-              <div class="ref-placeholder-inner">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5">
-                  <rect x="5" y="2" width="14" height="20" rx="2"/>
-                  <circle cx="12" cy="18" r="1"/>
-                </svg>
-                <span>Foto folgt</span>
-              </div>
+            <div class="ref-ipad-screen">
+              <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
             </div>
           </div>
         </div>
