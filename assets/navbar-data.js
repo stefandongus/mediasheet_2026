@@ -80,6 +80,21 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
+    name: "Mahrt & Hoerning",
+    location: "Göttingen, Germany",
+    website: "https://www.mahrt-hoerning.de/",
+    websiteLabel: "mahrt-hoerning.de",
+    image: "../../assets/img/ref-navbar-mahrthoerning.png",
+    imageAlt: "Mahrt & Hoerning Custom Navbar Screenshot",
+    navItems: [
+      { label: "Virtual Try-On / Lindberg", url: "https://www.mahrt-hoerning.de/" }
+    ],
+    example: {
+      label: "brand post",
+      url: "https://www.favrspecs.com/de/optiker/in/goettingen/821/mahrt-u-hoerning/24746/pro/marken/lindberg/119/lindbergs-new-aw23-campaign-unveils-new-visual-brand-identity/245/"
+    }
+  },
+  {
     name: "Augustin Optik Lounge",
     location: "Essen, Germany",
     website: "https://optik-augustin.de/",
