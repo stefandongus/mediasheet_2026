@@ -80,6 +80,21 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
+    name: "Bärtschi",
+    location: "Bern, Switzerland",
+    website: "https://www.baertschi.ch/",
+    websiteLabel: "baertschi.ch",
+    image: "../../assets/img/ref-navbar-baertschi.png",
+    imageAlt: "Bärtschi Custom Navbar Screenshot",
+    navItems: [
+      { label: "Unsere Top Marken / TRY ON", url: "https://www.baertschi.ch/top-marken" }
+    ],
+    example: {
+      label: "Product Page",
+      url: "https://www.favrspecs.com/de/optiker/in/bern/190/baertschi-optik/10898/pro/marken/goetti/39/optische-brillen/acero/3877/"
+    }
+  },
+  {
     name: "Augustin Optik Lounge",
     location: "Essen, Germany",
     website: "https://optik-augustin.de/",
