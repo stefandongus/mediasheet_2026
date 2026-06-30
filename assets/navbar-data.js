@@ -20,51 +20,6 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
-    name: "Volz",
-    location: "Thun, Switzerland",
-    website: "https://www.volz.ch/",
-    websiteLabel: "volz.ch",
-    image: "../../assets/img/ref-navbar-volz.png",
-    imageAlt: "Volz Custom Navbar Screenshot",
-    navItems: [
-      { label: "Brillen online anprobieren", url: "https://www.volz.ch/" }
-    ],
-    example: {
-      label: "product page",
-      url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/brands/goetti/39/eyeglasses/acero/3877/"
-    }
-  },
-  {
-    name: "Richtig! Kühn",
-    location: "Jena, Germany",
-    website: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/",
-    websiteLabel: "richtigkuehn.de",
-    image: "../../assets/img/ref-navbar-richtigkühn.png",
-    imageAlt: "Richtig! Kühn Custom Navbar Screenshot",
-    navItems: [
-      { label: "Suzy Glam", url: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/" }
-    ],
-    example: {
-      label: "brand profile",
-      url: "https://www.favrspecs.com/de/optiker/in/jena/826/richtig-kuehn/16431/pro/marken/suzy-glam/131/"
-    }
-  },
-  {
-    name: "Bärtschi",
-    location: "Bern, Switzerland",
-    website: "https://www.baertschi.ch/",
-    websiteLabel: "baertschi.ch",
-    image: "../../assets/img/ref-navbar-baertschi.png",
-    imageAlt: "Bärtschi Custom Navbar Screenshot",
-    navItems: [
-      { label: "Unsere Top Marken / TRY ON", url: "https://www.baertschi.ch/top-marken" }
-    ],
-    example: {
-      label: "Product Page",
-      url: "https://www.favrspecs.com/de/optiker/in/bern/190/baertschi-optik/10898/pro/marken/goetti/39/optische-brillen/acero/3877/"
-    }
-  },
-  {
     name: "Amon Mehrsehen",
     location: "Aschaffenburg, Germany",
     website: "https://www.amon-mehrsehen.de/",
@@ -77,6 +32,21 @@ const FAVR_NAVBAR_REFERENCES = [
     example: {
       label: "brand profile",
       url: "https://www.favrspecs.com/de/optiker/in/aschaffenburg/806/amon-mehrsehen/11088/pro/marken/hoffmann-natural-eyewear/53/"
+    }
+  },
+  {
+    name: "Augustin Optik Lounge",
+    location: "Essen, Germany",
+    website: "https://optik-augustin.de/",
+    websiteLabel: "optik-augustin.de",
+    image: "../../assets/img/ref-navbar-augustin.png",
+    imageAlt: "Augustin Optik Lounge Custom Navbar Screenshot",
+    navItems: [
+      { label: "ONLINE BRILLENANPROBE", url: "https://optik-augustin.de/" }
+    ],
+    example: {
+      label: "virtual try-on",
+      url: "https://www.favrspecs.com/de/optiker/in/essen/213/augustin-optik-lounge/10137/pro/marken/lindberg/119/optische-brillen/1055/4166/"
     }
   },
   {
@@ -95,6 +65,36 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
+    name: "Bärtschi",
+    location: "Bern, Switzerland",
+    website: "https://www.baertschi.ch/",
+    websiteLabel: "baertschi.ch",
+    image: "../../assets/img/ref-navbar-baertschi.png",
+    imageAlt: "Bärtschi Custom Navbar Screenshot",
+    navItems: [
+      { label: "Unsere Top Marken / TRY ON", url: "https://www.baertschi.ch/top-marken" }
+    ],
+    example: {
+      label: "Product Page",
+      url: "https://www.favrspecs.com/de/optiker/in/bern/190/baertschi-optik/10898/pro/marken/goetti/39/optische-brillen/acero/3877/"
+    }
+  },
+  {
+    name: "Richtig! Kühn",
+    location: "Jena, Germany",
+    website: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/",
+    websiteLabel: "richtigkuehn.de",
+    image: "../../assets/img/ref-navbar-richtigkühn.png",
+    imageAlt: "Richtig! Kühn Custom Navbar Screenshot",
+    navItems: [
+      { label: "Suzy Glam", url: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/jena/826/richtig-kuehn/16431/pro/marken/suzy-glam/131/"
+    }
+  },
+  {
     name: "Schütt Optik",
     location: "Ludwigsburg, Germany",
     website: "https://optik-schuett.de/",
@@ -110,18 +110,18 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
-    name: "Augustin Optik Lounge",
-    location: "Essen, Germany",
-    website: "https://optik-augustin.de/",
-    websiteLabel: "optik-augustin.de",
-    image: "../../assets/img/ref-navbar-augustin.png",
-    imageAlt: "Augustin Optik Lounge Custom Navbar Screenshot",
+    name: "Volz",
+    location: "Thun, Switzerland",
+    website: "https://www.volz.ch/",
+    websiteLabel: "volz.ch",
+    image: "../../assets/img/ref-navbar-volz.png",
+    imageAlt: "Volz Custom Navbar Screenshot",
     navItems: [
-      { label: "ONLINE BRILLENANPROBE", url: "https://optik-augustin.de/" }
+      { label: "Brillen online anprobieren", url: "https://www.volz.ch/" }
     ],
     example: {
-      label: "virtual try-on",
-      url: "https://www.favrspecs.com/de/optiker/in/essen/213/augustin-optik-lounge/10137/pro/marken/lindberg/119/optische-brillen/1055/4166/"
+      label: "product page",
+      url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/brands/goetti/39/eyeglasses/acero/3877/"
     }
   }
 ];
