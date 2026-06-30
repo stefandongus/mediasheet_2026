@@ -95,6 +95,21 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
+    name: "Schütt Optik",
+    location: "Ludwigsburg, Germany",
+    website: "https://optik-schuett.de/",
+    websiteLabel: "optik-schuett.de",
+    image: "../../assets/img/ref-navbar-schütt.png",
+    imageAlt: "Schütt Optik Custom Navbar Screenshot",
+    navItems: [
+      { label: "Try On / Caroline Abram", url: "https://optik-schuett.de/" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/ludwigsburg/380/schuett-optik-hoerakustik-kg/9900/pro/marken/caroline-abram/166/"
+    }
+  },
+  {
     name: "Augustin Optik Lounge",
     location: "Essen, Germany",
     website: "https://optik-augustin.de/",
