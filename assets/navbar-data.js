@@ -50,6 +50,21 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
+    name: "Hoet Optiek",
+    location: "Bruges, Belgium",
+    website: "https://www.hoet-optiek.be/en",
+    websiteLabel: "hoet-optiek.be",
+    image: "../../assets/img/ref-navbar-hoet.png",
+    imageAlt: "Hoet Optiek Custom Navbar Screenshot",
+    navItems: [
+      { label: "Virtual fitting in the footer", url: "https://www.hoet-optiek.be/en" }
+    ],
+    example: {
+      label: "Microsite",
+      url: "https://www.favrspecs.com/en/opticians/in/bruges/608/hoet-optiek-bv/15061/pro/eyeglasses/"
+    }
+  },
+  {
     name: "Mahrt & Hoerning",
     location: "Göttingen, Germany",
     website: "https://www.mahrt-hoerning.de/",
