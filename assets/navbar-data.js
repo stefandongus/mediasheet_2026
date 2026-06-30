@@ -109,21 +109,6 @@ const FAVR_NAVBAR_REFERENCES = [
       url: "https://www.favrspecs.com/de/optiker/in/ludwigsburg/380/schuett-optik-hoerakustik-kg/9900/pro/marken/caroline-abram/166/"
     }
   },
-  {
-    name: "Volz",
-    location: "Thun, Switzerland",
-    website: "https://www.volz.ch/",
-    websiteLabel: "volz.ch",
-    image: "../../assets/img/ref-navbar-volz.png",
-    imageAlt: "Volz Custom Navbar Screenshot",
-    navItems: [
-      { label: "Brillen online anprobieren", url: "https://www.volz.ch/" }
-    ],
-    example: {
-      label: "product page",
-      url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/brands/goetti/39/eyeglasses/acero/3877/"
-    }
-  }
 ];
 
 /* ── Render function ── */
