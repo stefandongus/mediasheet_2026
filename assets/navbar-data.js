@@ -35,36 +35,6 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
-    name: "Optik Schade",
-    location: "Viersen, Germany",
-    website: "https://optikschade.com/",
-    websiteLabel: "optikschade.com",
-    image: "../../assets/img/ref-navbar-schade.png",
-    imageAlt: "Optik Schade Custom Navbar Screenshot",
-    navItems: [
-      { label: "Brand Slider", url: "https://optikschade.com/" }
-    ],
-    example: {
-      label: "brand profile",
-      url: "https://www.favrspecs.com/de/optiker/in/viersen/511/optik-akustik-schade/21803/pro/marken/andy-wolf/102/"
-    }
-  },
-  {
-    name: "Optik Hensler",
-    location: "Frankfurt, Germany",
-    website: "https://www.optik-hensler.de/leistungen/mode",
-    websiteLabel: "optik-hensler.de",
-    image: "../../assets/img/ref-navbar-hensler.png",
-    imageAlt: "Optik Hensler Custom Navbar Screenshot",
-    navItems: [
-      { label: "Blackfin", url: "https://www.optik-hensler.de/leistungen/mode" }
-    ],
-    example: {
-      label: "brand profile",
-      url: "https://www.favrspecs.com/de/optiker/in/frankfurt-am-main/214/augenoptik-hensler/24996/pro/marken/blackfin/41/"
-    }
-  },
-  {
     name: "Richtig! Kühn",
     location: "Jena, Germany",
     website: "https://richtigkuehn.de/die-groesste-auswahl-an-hochwertigen-markenbrillen/",
@@ -92,6 +62,21 @@ const FAVR_NAVBAR_REFERENCES = [
     example: {
       label: "Product Page",
       url: "https://www.favrspecs.com/de/optiker/in/bern/190/baertschi-optik/10898/pro/marken/goetti/39/optische-brillen/acero/3877/"
+    }
+  },
+  {
+    name: "Amon Mehrsehen",
+    location: "Aschaffenburg, Germany",
+    website: "https://www.amon-mehrsehen.de/",
+    websiteLabel: "amon-mehrsehen.de",
+    image: "../../assets/img/ref-navbar-amon.png",
+    imageAlt: "Amon Mehrsehen Custom Navbar Screenshot",
+    navItems: [
+      { label: "Brillenanprobe / Hoffmann Natural Eyewear", url: "https://www.favrspecs.com/de/optiker/in/aschaffenburg/806/amon-mehrsehen/11088/pro/optische-brillen/" }
+    ],
+    example: {
+      label: "brand profile",
+      url: "https://www.favrspecs.com/de/optiker/in/aschaffenburg/806/amon-mehrsehen/11088/pro/marken/hoffmann-natural-eyewear/53/"
     }
   },
   {
