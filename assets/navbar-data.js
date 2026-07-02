@@ -65,6 +65,21 @@ const FAVR_NAVBAR_REFERENCES = [
     }
   },
   {
+    name: "Ramstein",
+    location: "Basel, Switzerland",
+    website: "https://www.ramstein-optik.ch/en/home",
+    websiteLabel: "ramstein-optik.ch",
+    image: "../../assets/img/ref-navbar-ramstein.png",
+    imageAlt: "Ramstein Custom Navbar Screenshot",
+    navItems: [
+      { label: "Try it on", url: "https://www.ramstein-optik.ch/en/home" }
+    ],
+    example: {
+      label: "Try-On",
+      url: "https://www.favrspecs.com/en/opticians/in/basel/189/ramstein-optik/10496/pro/brands/goetti/39/sunglasses/ahlf/2691/"
+    }
+  },
+  {
     name: "Mahrt & Hoerning",
     location: "Göttingen, Germany",
     website: "https://www.mahrt-hoerning.de/",
