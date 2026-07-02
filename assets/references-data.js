@@ -94,6 +94,27 @@ const FAVR_REFERENCES = [
         modules: ["Brand Slider", "News Slider", "Product Wall"]
       }
     ]
+  },
+  {
+    name: "Friedman Optometry",
+    location: "Los Angeles, USA",
+    website: "https://www.friedmanoptical.com/",
+    websiteLabel: "friedmanoptical.com",
+    image: "../../assets/img/ref-friedman.png",
+    imageAlt: "Friedman Optometry Website Screenshot",
+    imageModule: "Brand Wall",
+    pages: [
+      {
+        label: "Designer Eyeglasses",
+        url: "https://www.friedmanoptical.com/eyeglasses/designer-eyeglasses-in-culver-city/",
+        modules: ["Logo Wall"]
+      },
+      {
+        label: "Luxury Eyewear",
+        url: "https://www.friedmanoptical.com/luxury-eyewear/",
+        modules: ["Brand Wall"]
+      }
+    ]
   }
 ];
 
