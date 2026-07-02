@@ -102,7 +102,7 @@ const FAVR_REFERENCES = [
     websiteLabel: "volz.ch",
     image: "../../assets/img/ref-volz.png",
     imageAlt: "Volz Website Screenshot",
-    imageModule: "Product Wall",
+    imageModule: "Brand Slider",
     pages: [
       {
         label: "Brillen",
