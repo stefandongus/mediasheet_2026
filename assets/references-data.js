@@ -96,6 +96,22 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Volz",
+    location: "Thun, Switzerland",
+    website: "https://www.volz.ch/",
+    websiteLabel: "volz.ch",
+    image: "../../assets/img/ref-volz.png",
+    imageAlt: "Volz Website Screenshot",
+    imageModule: "Product Wall",
+    pages: [
+      {
+        label: "Brillen",
+        url: "https://www.volz.ch/brillen/",
+        modules: ["Product Wall", "Brand Slider"]
+      }
+    ]
+  },
+  {
     name: "Friedman Optometry",
     location: "Los Angeles, USA",
     website: "https://www.friedmanoptical.com/",
