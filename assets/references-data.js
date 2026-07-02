@@ -100,6 +100,7 @@ const FAVR_REFERENCES = [
     location: "Los Angeles, USA",
     website: "https://www.friedmanoptical.com/",
     websiteLabel: "friedmanoptical.com",
+    note: "accessible in the USA only",
     image: "../../assets/img/ref-friedman.png",
     imageAlt: "Friedman Optometry Website Screenshot",
     imageModule: "Brand Wall",
@@ -130,7 +131,10 @@ function renderReferences() {
           <h2 class="ref-name">${ref.name}</h2>
           <span class="ref-location">${ref.location}</span>
         </div>
-        <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
+        <div class="ref-website-wrap">
+          <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
+          ${ref.note ? `<span class="ref-note">${ref.note}</span>` : ''}
+        </div>
       </div>
       <div class="ref-body">
         <div class="ref-ipad">
