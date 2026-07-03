@@ -183,14 +183,15 @@
 .ref-ipad {
   background: #ffffff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 32px;
+  padding: 48px;
   border-right: 1px solid #eee;
 }
 
 .ref-ipad img {
-  width: 100%;
+  width: 75%;
   display: block;
 }
 
@@ -232,12 +233,13 @@
 /* iPad Modul-Label */
 .ref-ipad-label {
   text-align: center;
-  margin-top: 12px;
-  font-size: 11px;
+  margin-top: 10px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--mid);
+  white-space: nowrap;
 }
 
 /* ── Mobile ── */
