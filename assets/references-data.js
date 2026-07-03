@@ -180,11 +180,7 @@ function renderReferences() {
       </div>
       <div class="ref-body">
         <div class="ref-ipad">
-          <div class="ref-ipad-frame">
-            <div class="ref-ipad-screen">
-              <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy">
-            </div>
-          </div>
+          <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy" style="width:100%; display:block;">
           <div class="ref-ipad-label">${ref.imageModule}</div>
         </div>
         <div class="ref-pages">
