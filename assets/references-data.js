@@ -278,7 +278,7 @@ function renderReferences() {
   if (!container) return;
 
   container.innerHTML = FAVR_REFERENCES.map(ref => `
-    <div class="ref-card">
+    <div class="ref-card" style="margin-bottom: 80px;">
       <div class="ref-card-header">
         <div class="ref-meta">
           <h2 class="ref-name">${ref.name}</h2>
