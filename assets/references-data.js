@@ -5,6 +5,7 @@
    ============================================ */
 
 const FAVR_REFERENCES = [
+
   {
     name: "Toerschen",
     location: "Tönisvorst, Germany",
@@ -29,27 +30,6 @@ const FAVR_REFERENCES = [
         url: "https://www.favrspecs.com/de/optiker/in/toenisvorst/499/brillenhaus-toerschen/16410/pro/optische-brillen/",
         modules: ["Product Page"],
         type: "page"
-      }
-    ]
-  },
-  {
-    name: "Optik Schade",
-    location: "Viersen, Deutschland",
-    website: "https://optikschade.com/",
-    websiteLabel: "optikschade.com",
-    image: "../../assets/img/ref-optikschade.png",
-    imageAlt: "Optik Schade Website Screenshot",
-    imageModule: "Brand Slider",
-    pages: [
-      {
-        label: "Home",
-        url: "https://optikschade.com/",
-        modules: ["Brand Slider", "Product Wall", "News Slider"]
-      },
-      {
-        label: "Brillenmarken",
-        url: "https://optikschade.com/brillenmarken/",
-        modules: ["Logo Wall", "Brand Wall"]
       }
     ]
   },
@@ -248,6 +228,27 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Optik Schade",
+    location: "Viersen, Deutschland",
+    website: "https://optikschade.com/",
+    websiteLabel: "optikschade.com",
+    image: "../../assets/img/ref-optikschade.png",
+    imageAlt: "Optik Schade Website Screenshot",
+    imageModule: "Brand Slider",
+    pages: [
+      {
+        label: "Home",
+        url: "https://optikschade.com/",
+        modules: ["Brand Slider", "Product Wall", "News Slider"]
+      },
+      {
+        label: "Brillenmarken",
+        url: "https://optikschade.com/brillenmarken/",
+        modules: ["Logo Wall", "Brand Wall"]
+      }
+    ]
+  },
+  {
     name: "Friedman Optometry",
     location: "Los Angeles, USA",
     website: "https://www.friedmanoptical.com/",
@@ -268,6 +269,7 @@ const FAVR_REFERENCES = [
         modules: ["Brand Wall"]
       }
     ]
+  }
   }
 ];
 
