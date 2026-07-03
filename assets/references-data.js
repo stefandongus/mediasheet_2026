@@ -27,7 +27,8 @@ const FAVR_REFERENCES = [
       {
         label: "Online Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/toenisvorst/499/brillenhaus-toerschen/16410/pro/optische-brillen/",
-        modules: ["Product Page"]
+        modules: ["Product Page"],
+        type: "page"
       }
     ]
   },
@@ -189,7 +190,7 @@ function renderReferences() {
               <div class="ref-page-top">
                 <a href="${page.url}" class="ref-page-link" target="_blank">${page.label}</a>
                 <div class="ref-modules">
-                  ${page.modules.map(m => `<span class="ref-tag">${m}</span>`).join('')}
+                  ${page.modules.map(m => `<span class="ref-tag${page.type === 'page' ? ' ref-tag-page' : ''}">${m}</span>`).join('')}
                 </div>
               </div>
             </div>
