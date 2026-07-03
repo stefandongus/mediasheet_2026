@@ -109,7 +109,7 @@
 /* ── Karten-Body: Screenshot + Seiten ── */
 .ref-body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 0;
 }
 
@@ -133,11 +133,12 @@
   display: flex;
   flex-direction: column;
   gap: 0;
+  background: #f7f7f7;
 }
 
 .ref-page {
   padding: 24px 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .ref-page:last-child { border-bottom: none; }
@@ -173,9 +174,70 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--black);
-  background: var(--bg);
+  background: #ececec;
   border: 1px solid #ddd;
   padding: 4px 10px;
+}
+
+/* ── iPad Mockup (references page) ── */
+.ref-ipad {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border-right: 1px solid #eee;
+}
+
+.ref-ipad img {
+  width: 100%;
+  display: block;
+}
+
+.ref-ipad-frame {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18), inset 0 0 0 1px #333;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+}
+
+.ref-ipad-frame::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: #333;
+  border-radius: 3px;
+  margin: 0 auto 10px;
+}
+
+.ref-ipad-screen {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.ref-ipad-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* iPad Modul-Label */
+.ref-ipad-label {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--mid);
 }
 
 /* ── Mobile ── */
@@ -187,6 +249,7 @@
   .ref-screenshot { border-right: none; border-bottom: 1px solid #eee; max-height: 240px; }
   .ref-card-header { flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; }
   .ref-pages { padding: 20px; }
+  .ref-ipad { padding: 20px; border-right: none; border-bottom: 1px solid #eee; }
 }
 
 /* ── Benefits Liste im Header ── */
@@ -226,56 +289,6 @@
   flex-shrink: 0;
 }
 
-/* ── iPad Mockup (references page) ── */
-.ref-ipad {
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px;
-  border-right: 1px solid #eee;
-}
-
-.ref-ipad-frame {
-  background: #1a1a1a;
-  border-radius: 16px;
-  padding: 12px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18), inset 0 0 0 1px #333;
-  width: 100%;
-  max-width: 420px;
-  position: relative;
-}
-
-.ref-ipad-frame::before {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 5px;
-  background: #333;
-  border-radius: 3px;
-  margin: 0 auto 10px;
-}
-
-.ref-ipad-screen {
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  aspect-ratio: 4/3;
-}
-
-.ref-ipad-screen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .ref-ipad { padding: 20px; border-right: none; border-bottom: 1px solid #eee; }
-  .ref-ipad-frame { max-width: 300px; }
-}
-
 /* ── Header ── */
 .ref-header .btn {
   margin-top: 32px;
@@ -303,17 +316,6 @@
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 32px;
-}
-
-/* iPad Modul-Label */
-.ref-ipad-label {
-  text-align: center;
-  margin-top: 12px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--mid);
 }
 
 /* ── Navbar Reference Card ── */
