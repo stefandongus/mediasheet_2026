@@ -163,6 +163,91 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Amon Mehrsehen",
+    location: "Aschaffenburg, Germany",
+    website: "https://www.amon-mehrsehen.de/",
+    websiteLabel: "amon-mehrsehen.de",
+    image: "../../assets/img/ref-amon.png",
+    imageAlt: "Amon Mehrsehen Website Screenshot",
+    imageModule: "Brand Profile",
+    pages: [
+      {
+        label: "Brillenanprobe",
+        url: "https://www.favrspecs.com/de/optiker/in/aschaffenburg/806/amon-mehrsehen/11088/pro/optische-brillen/",
+        modules: ["Brand Profile"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Bärtschi",
+    location: "Bern, Switzerland",
+    website: "https://www.baertschi.ch/",
+    websiteLabel: "baertschi.ch",
+    image: "../../assets/img/ref-baertschi.png",
+    imageAlt: "Bärtschi Website Screenshot",
+    imageModule: "Product Page",
+    pages: [
+      {
+        label: "Unsere Top-Marken / Try-On",
+        url: "https://www.favrspecs.com/de/optiker/in/bern/190/baertschi-optik/10898/pro/marken/you-mawo/137/",
+        modules: ["Product Page"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "EuroOptica",
+    location: "New York City, USA",
+    website: "https://www.eurooptica.com/",
+    websiteLabel: "eurooptica.com",
+    image: "../../assets/img/ref-eurooptica.png",
+    imageAlt: "EuroOptica Website Screenshot",
+    imageModule: "Brand Page",
+    pages: [
+      {
+        label: "Try-On",
+        url: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/eyeglasses/",
+        modules: ["Brand Page"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Mahrt & Hoerning",
+    location: "Göttingen, Germany",
+    website: "https://www.mahrt-hoerning.de/",
+    websiteLabel: "mahrt-hoerning.de",
+    image: "../../assets/img/ref-mahrthoerning.png",
+    imageAlt: "Mahrt & Hoerning Website Screenshot",
+    imageModule: "Brand Post",
+    pages: [
+      {
+        label: "Brillenmode / Lindberg / Post",
+        url: "https://www.favrspecs.com/de/optiker/in/goettingen/821/mahrt-u-hoerning/24746/pro/marken/lindberg/119/lindbergs-new-aw23-campaign-unveils-new-visual-brand-identity/245/",
+        modules: ["Brand Post"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Ramstein",
+    location: "Basel, Switzerland",
+    website: "https://www.ramstein-optik.ch/en/home",
+    websiteLabel: "ramstein-optik.ch",
+    image: "../../assets/img/ref-ramstein.png",
+    imageAlt: "Ramstein Website Screenshot",
+    imageModule: "Virtual Try-On",
+    pages: [
+      {
+        label: "Try it on!",
+        url: "https://www.favrspecs.com/en/opticians/in/basel/189/ramstein-optik/10496/pro/brands/goetti/39/sunglasses/ahlf/2691/",
+        modules: ["Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Friedman Optometry",
     location: "Los Angeles, USA",
     website: "https://www.friedmanoptical.com/",
