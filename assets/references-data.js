@@ -270,7 +270,6 @@ const FAVR_REFERENCES = [
       }
     ]
   }
-  }
 ];
 
 /* ── Render function ── */
