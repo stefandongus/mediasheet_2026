@@ -87,6 +87,12 @@ const FAVR_REFERENCES = [
         label: "Brillen",
         url: "https://www.optik-leonhardt.de/brillen/",
         modules: ["Logo Wall"]
+      },
+      {
+        label: "Online Anprobieren",
+        url: "https://www.favrspecs.com/de/optiker/in/bretten/383/optik-leonhardt/10083/pro/optische-brillen/",
+        modules: ["Product Page"],
+        type: "page"
       }
     ]
   },
@@ -103,6 +109,12 @@ const FAVR_REFERENCES = [
         label: "Home",
         url: "https://gutsch-optik.de/",
         modules: ["Brand Slider", "Logo Wall", "Product Wall"]
+      },
+      {
+        label: "Try On",
+        url: "https://www.favrspecs.com/de/optiker/in/muenchen/218/gutsch-optik/20775/pro/optische-brillen/",
+        modules: ["Product Page"],
+        type: "page"
       }
     ]
   },
@@ -119,6 +131,12 @@ const FAVR_REFERENCES = [
         label: "Home",
         url: "https://optik-augustin.de/",
         modules: ["Brand Slider", "News Slider", "Product Wall"]
+      },
+      {
+        label: "Online Brillenanprobe",
+        url: "https://www.favrspecs.com/de/optiker/in/essen/213/augustin-optik-lounge/10137/pro/optische-brillen/",
+        modules: ["Product Page"],
+        type: "page"
       }
     ]
   },
@@ -135,6 +153,12 @@ const FAVR_REFERENCES = [
         label: "Brillen",
         url: "https://www.volz.ch/brillen/",
         modules: ["Product Wall", "Brand Slider"]
+      },
+      {
+        label: "Brillen online anprobieren",
+        url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/eyeglasses/",
+        modules: ["Product Page"],
+        type: "page"
       }
     ]
   },
