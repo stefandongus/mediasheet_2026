@@ -28,7 +28,7 @@ const FAVR_REFERENCES = [
       {
         label: "Online Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/toenisvorst/499/brillenhaus-toerschen/16410/pro/optische-brillen/",
-        modules: ["Product Page"],
+        modules: ["Brand Portfolio"],
         type: "page"
       }
     ]
@@ -71,7 +71,7 @@ const FAVR_REFERENCES = [
       {
         label: "Online Anprobieren",
         url: "https://www.favrspecs.com/de/optiker/in/bretten/383/optik-leonhardt/10083/pro/optische-brillen/",
-        modules: ["Product Page"],
+        modules: ["Brand Portfolio"],
         type: "page"
       }
     ]
@@ -93,7 +93,7 @@ const FAVR_REFERENCES = [
       {
         label: "Try On",
         url: "https://www.favrspecs.com/de/optiker/in/muenchen/218/gutsch-optik/20775/pro/optische-brillen/",
-        modules: ["Product Page"],
+        modules: ["Brand Portfolio"],
         type: "page"
       }
     ]
@@ -115,7 +115,13 @@ const FAVR_REFERENCES = [
       {
         label: "Online Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/essen/213/augustin-optik-lounge/10137/pro/optische-brillen/",
-        modules: ["Product Page"],
+        modules: ["Brand Portfolio"],
+        type: "page"
+      },
+      {
+        label: "Marken",
+        url: "https://www.favrspecs.com/de/optiker/in/essen/213/augustin-optik-lounge/10137/pro/marken/dita/105/",
+        modules: ["Brand Page"],
         type: "page"
       }
     ]
@@ -137,7 +143,7 @@ const FAVR_REFERENCES = [
       {
         label: "Brillen online anprobieren",
         url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/eyeglasses/",
-        modules: ["Product Page"],
+        modules: ["Brand Portfolio"],
         type: "page"
       }
     ]
@@ -154,7 +160,7 @@ const FAVR_REFERENCES = [
       {
         label: "Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/aschaffenburg/806/amon-mehrsehen/11088/pro/optische-brillen/",
-        modules: ["Brand Profile"],
+        modules: ["Brand Portfolio"],
         type: "page"
       }
     ]
@@ -171,7 +177,7 @@ const FAVR_REFERENCES = [
       {
         label: "Unsere Top-Marken / Try-On",
         url: "https://www.favrspecs.com/de/optiker/in/bern/190/baertschi-optik/10898/pro/marken/you-mawo/137/",
-        modules: ["Product Page"],
+        modules: ["Brand Page"],
         type: "page"
       }
     ]
@@ -188,7 +194,7 @@ const FAVR_REFERENCES = [
       {
         label: "Try-On",
         url: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/eyeglasses/",
-        modules: ["Brand Page"],
+        modules: ["Brand Portfolio"],
         type: "page"
       }
     ]
@@ -203,7 +209,13 @@ const FAVR_REFERENCES = [
     imageModule: "Brand Post",
     pages: [
       {
-        label: "Brillenmode / Lindberg / Post",
+        label: "Virtual Try-On",
+        url: "https://www.favrspecs.com/de/optiker/in/goettingen/821/mahrt-u-hoerning/24746/pro/optische-brillen/",
+        modules: ["Brand Portfolio"],
+        type: "page"
+      },
+      {
+        label: "Brillenmode / Brand / Post",
         url: "https://www.favrspecs.com/de/optiker/in/goettingen/821/mahrt-u-hoerning/24746/pro/marken/lindberg/119/lindbergs-new-aw23-campaign-unveils-new-visual-brand-identity/245/",
         modules: ["Brand Post"],
         type: "page"
