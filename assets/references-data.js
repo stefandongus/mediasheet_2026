@@ -6,6 +6,32 @@
 
 const FAVR_REFERENCES = [
   {
+    name: "Toerschen",
+    location: "Tönisvorst, Germany",
+    website: "https://toerschen.com/",
+    websiteLabel: "toerschen.com",
+    image: "../../assets/img/ref_toerschen.png",
+    imageAlt: "Toerschen Website Screenshot",
+    imageModule: "Brand Slider",
+    pages: [
+      {
+        label: "Home",
+        url: "https://toerschen.com/",
+        modules: ["Brand Slider", "News Slider", "Logo Wall"]
+      },
+      {
+        label: "Brillenmarken",
+        url: "https://toerschen.com/brillenmarken",
+        modules: ["Brand Wall"]
+      },
+      {
+        label: "Online Brillenanprobe",
+        url: "https://www.favrspecs.com/de/optiker/in/toenisvorst/499/brillenhaus-toerschen/16410/pro/optische-brillen/",
+        modules: ["Product Page"]
+      }
+    ]
+  },
+  {
     name: "Optik Schade",
     location: "Viersen, Deutschland",
     website: "https://optikschade.com/",
