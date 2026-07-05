@@ -28,7 +28,7 @@ const FAVR_REFERENCES = [
       {
         label: "Online Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/toenisvorst/499/brillenhaus-toerschen/16410/pro/optische-brillen/",
-        modules: ["Brand Portfolio"],
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -71,7 +71,7 @@ const FAVR_REFERENCES = [
       {
         label: "Online Anprobieren",
         url: "https://www.favrspecs.com/de/optiker/in/bretten/383/optik-leonhardt/10083/pro/optische-brillen/",
-        modules: ["Brand Portfolio"],
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -93,7 +93,7 @@ const FAVR_REFERENCES = [
       {
         label: "Try On",
         url: "https://www.favrspecs.com/de/optiker/in/muenchen/218/gutsch-optik/20775/pro/optische-brillen/",
-        modules: ["Brand Portfolio"],
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -143,7 +143,7 @@ const FAVR_REFERENCES = [
       {
         label: "Brillen online anprobieren",
         url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/eyeglasses/",
-        modules: ["Brand Portfolio"],
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -160,7 +160,7 @@ const FAVR_REFERENCES = [
       {
         label: "Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/aschaffenburg/806/amon-mehrsehen/11088/pro/optische-brillen/",
-        modules: ["Brand Portfolio"],
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -194,7 +194,7 @@ const FAVR_REFERENCES = [
       {
         label: "Try-On",
         url: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/eyeglasses/",
-        modules: ["Brand Portfolio"],
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -234,7 +234,7 @@ const FAVR_REFERENCES = [
       {
         label: "Try it on!",
         url: "https://www.favrspecs.com/en/opticians/in/basel/189/ramstein-optik/10496/pro/brands/goetti/39/sunglasses/ahlf/2691/",
-        modules: ["Virtual Try-On"],
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -251,7 +251,7 @@ const FAVR_REFERENCES = [
       {
         label: "Brillenmarken / Online Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/heidelberg/560/allesbrille-manufaktur/10059/pro/marken/masunaga/78/between-ornament-and-structure-new-ksan-designs-by-masunaga-for-springsummer-2026/604/",
-        modules: ["Brand Post"],
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
