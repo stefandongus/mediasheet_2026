@@ -301,43 +301,84 @@ const FAVR_REFERENCES = [
   }
 ];
 
+/* ── Icons (inline SVG, no external font dependency) ── */
+const REF_ICON_POINTER = '<svg width="13" height="13" viewBox="0 0 24 24" style="flex-shrink:0;" aria-hidden="true"><path d="M3 3L21 12L3 21L7 12L3 3Z" fill="#8a8a8a"/></svg>';
+
+function refIconCheck(color) {
+  return `<svg width="12" height="12" viewBox="0 0 24 24" style="flex-shrink:0;" aria-hidden="true"><path d="M20 6L9 17L4 12" stroke="${color}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
+/* ── Pill button per module ── */
+function refPill(label, isLanding) {
+  const bg = isLanding ? '#E6F1FB' : '#EAF3DE';
+  const color = isLanding ? '#0C447C' : '#27500A';
+  return `<span style="display:inline-flex; align-items:center; gap:6px; background:${bg}; color:${color}; font-size:13px; line-height:1; padding:7px 14px; border-radius:999px; white-space:nowrap;">${refIconCheck(color)}${label}</span>`;
+}
+
+/* ── Single page row: pointer + "label" + pill buttons ── */
+function refPageRow(page, isLast) {
+  const dividerStyle = isLast ? '' : 'border-bottom:0.5px solid #e3e3e0; margin-bottom:14px; padding-bottom:14px;';
+  return `
+    <div style="${dividerStyle}">
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+        ${REF_ICON_POINTER}
+        <a href="${page.url}" target="_blank" style="font-size:15px; color:#1a1a1a; text-decoration:none;">&ldquo;${page.label}&rdquo;</a>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        ${page.modules.map(m => refPill(m, page.type === 'page')).join('')}
+      </div>
+    </div>
+  `;
+}
+
+/* ── Category group: heading + card, only rendered if pages exist ── */
+function refGroup(title, color, pages, isFirst) {
+  if (!pages.length) return '';
+  return `
+    <div style="font-size:13px; font-weight:600; color:${color}; text-transform:uppercase; letter-spacing:0.03em; margin-bottom:10px;${isFirst ? '' : ' margin-top:24px;'}">${title}</div>
+    <div style="background:#fafafa; border:0.5px solid #e3e3e0; border-radius:12px; padding:14px 16px;">
+      ${pages.map((p, i) => refPageRow(p, i === pages.length - 1)).join('')}
+    </div>
+  `;
+}
+
 /* ── Render function ── */
 function renderReferences() {
   const container = document.getElementById('ref-cards-container');
   if (!container) return;
 
-  container.innerHTML = FAVR_REFERENCES.map(ref => `
-    <div class="ref-card" style="margin-bottom: 56px;">
-      <div class="ref-card-header">
-        <div class="ref-meta">
-          <h2 class="ref-name">${ref.name}</h2>
-          <span class="ref-location">${ref.location}</span>
+  container.innerHTML = FAVR_REFERENCES.map(ref => {
+    const scmPages = ref.pages.filter(p => p.type !== 'page');
+    const landingPages = ref.pages.filter(p => p.type === 'page');
+
+    const pagesHtml =
+      refGroup('Smart Content Modules', '#3B6D11', scmPages, true) +
+      refGroup('Landing Pages', '#185FA5', landingPages, scmPages.length === 0);
+
+    return `
+      <div class="ref-card" style="margin-bottom: 56px;">
+        <div class="ref-card-header">
+          <div class="ref-meta">
+            <h2 class="ref-name">${ref.name}</h2>
+            <span class="ref-location">${ref.location}</span>
+          </div>
+          <div class="ref-website-wrap">
+            <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
+            ${ref.note ? `<span class="ref-note">${ref.note}</span>` : ''}
+          </div>
         </div>
-        <div class="ref-website-wrap">
-          <a href="${ref.website}" class="ref-website" target="_blank">${ref.websiteLabel} ↗</a>
-          ${ref.note ? `<span class="ref-note">${ref.note}</span>` : ''}
+        <div class="ref-body">
+          <div class="ref-ipad">
+            <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy" style="width:100%; display:block;">
+            <div class="ref-ipad-label">${ref.imageModule}</div>
+          </div>
+          <div class="ref-pages">
+            ${pagesHtml}
+          </div>
         </div>
       </div>
-      <div class="ref-body">
-        <div class="ref-ipad">
-          <img src="${ref.image}" alt="${ref.imageAlt}" loading="lazy" style="width:100%; display:block;">
-          <div class="ref-ipad-label">${ref.imageModule}</div>
-        </div>
-        <div class="ref-pages">
-          ${ref.pages.map(page => `
-            <div class="ref-page">
-              <div class="ref-page-top">
-                <a href="${page.url}" class="ref-page-link" target="_blank">${page.label}</a>
-                <div class="ref-modules">
-                  ${page.modules.map(m => `<span class="ref-tag${page.type === 'page' ? ' ref-tag-page' : ''}">${m}</span>`).join('')}
-                </div>
-              </div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 document.addEventListener('DOMContentLoaded', renderReferences);
