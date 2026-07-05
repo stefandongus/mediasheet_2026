@@ -121,7 +121,7 @@ const FAVR_REFERENCES = [
       {
         label: "Marken",
         url: "https://www.favrspecs.com/de/optiker/in/essen/213/augustin-optik-lounge/10137/pro/marken/dita/105/",
-        modules: ["Brand Page"],
+        modules: ["Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -177,7 +177,7 @@ const FAVR_REFERENCES = [
       {
         label: "Unsere Top-Marken / Try-On",
         url: "https://www.favrspecs.com/de/optiker/in/bern/190/baertschi-optik/10898/pro/marken/you-mawo/137/",
-        modules: ["Brand Page"],
+        modules: ["Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -217,7 +217,7 @@ const FAVR_REFERENCES = [
       {
         label: "Brillenmode / Brand / Post",
         url: "https://www.favrspecs.com/de/optiker/in/goettingen/821/mahrt-u-hoerning/24746/pro/marken/lindberg/119/lindbergs-new-aw23-campaign-unveils-new-visual-brand-identity/245/",
-        modules: ["Brand Post"],
+        modules: ["Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -263,7 +263,7 @@ const FAVR_REFERENCES = [
     websiteLabel: "optikschade.com",
     image: "../../assets/img/ref-optikschade.png",
     imageAlt: "Optik Schade Website Screenshot",
-    imageModule: "Brand Slider",
+    imageModule: "Logo Wall",
     pages: [
       {
         label: "Home",
