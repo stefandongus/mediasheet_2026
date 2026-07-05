@@ -240,6 +240,23 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "AllesBrille",
+    location: "Heidelberg, Germany",
+    website: "https://allesbrille-heidelberg.com/",
+    websiteLabel: "allesbrille-heidelberg.com",
+    image: "../../assets/img/ref-allesbrille.png",
+    imageAlt: "AllesBrille Website Screenshot",
+    imageModule: "Brand Post",
+    pages: [
+      {
+        label: "Brillenmarken / Online Brillenanprobe",
+        url: "https://www.favrspecs.com/de/optiker/in/heidelberg/560/allesbrille-manufaktur/10059/pro/marken/masunaga/78/between-ornament-and-structure-new-ksan-designs-by-masunaga-for-springsummer-2026/604/",
+        modules: ["Brand Post"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Optik Schade",
     location: "Viersen, Deutschland",
     website: "https://optikschade.com/",
