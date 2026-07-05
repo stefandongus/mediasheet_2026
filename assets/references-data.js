@@ -302,7 +302,7 @@ const FAVR_REFERENCES = [
 ];
 
 /* ── Icons (inline SVG, no external font dependency) ── */
-const REF_ICON_POINTER = '<svg width="13" height="13" viewBox="0 0 24 24" style="flex-shrink:0;" aria-hidden="true"><path d="M3 3L21 12L3 21L7 12L3 3Z" fill="#8a8a8a"/></svg>';
+const REF_ICON_POINTER = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; transform:rotate(90deg);" aria-hidden="true"><path d="M7.904 17.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093l4.907 4.907a1.067 1.067 0 0 0 1.509 0l1.047 -1.047a1.067 1.067 0 0 0 0 -1.509l-4.907 -4.907l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563z"/></svg>';
 
 function refIconCheck(color) {
   return `<svg width="12" height="12" viewBox="0 0 24 24" style="flex-shrink:0;" aria-hidden="true"><path d="M20 6L9 17L4 12" stroke="${color}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
