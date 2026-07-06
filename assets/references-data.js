@@ -381,3 +381,5 @@ function renderReferences() {
 }
 
 document.addEventListener('DOMContentLoaded', renderReferences);
+
+/* v2 */ 
