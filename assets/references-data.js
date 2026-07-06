@@ -5,7 +5,6 @@
    ============================================ */
 
 const FAVR_REFERENCES = [
-
   {
     name: "Toerschen",
     location: "Tönisvorst, Germany",
@@ -35,22 +34,6 @@ const FAVR_REFERENCES = [
     ]
   },
   {
-    name: "Augenoptik Hensler",
-    location: "Frankfurt, Deutschland",
-    website: "https://www.optik-hensler.de/",
-    websiteLabel: "optik-hensler.de",
-    image: "../../assets/img/ref-hensler.png",
-    imageAlt: "Augenoptik Hensler Website Screenshot",
-    imageModule: "Brand Wall",
-    pages: [
-      {
-        label: "Brillenmode",
-        url: "https://www.optik-hensler.de/leistungen/mode",
-        modules: ["Brand Slider", "Brand Wall", "Product Wall Optical", "Product Wall Sun", "News Slider", "Logo Wall"]
-      }
-    ]
-  },
-  {
     name: "Optik Leonhardt",
     location: "Bretten, Deutschland",
     website: "https://www.optik-leonhardt.de/",
@@ -73,29 +56,6 @@ const FAVR_REFERENCES = [
       {
         label: "Online Anprobieren",
         url: "https://www.favrspecs.com/de/optiker/in/bretten/383/optik-leonhardt/10083/pro/optische-brillen/",
-        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
-        type: "page"
-      }
-    ]
-  },
-  {
-    name: "Gutsch Optik",
-    location: "München, Deutschland",
-    website: "https://gutsch-optik.de/",
-    websiteLabel: "gutsch-optik.de",
-    webdesign: true,
-    image: "../../assets/img/ref-gutsch.png",
-    imageAlt: "Gutsch Optik Website Screenshot",
-    imageModule: "Product Wall",
-    pages: [
-      {
-        label: "Home",
-        url: "https://gutsch-optik.de/",
-        modules: ["Brand Slider", "Logo Wall", "Product Wall"]
-      },
-      {
-        label: "Try On",
-        url: "https://www.favrspecs.com/de/optiker/in/muenchen/218/gutsch-optik/20775/pro/optische-brillen/",
         modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
@@ -130,24 +90,18 @@ const FAVR_REFERENCES = [
     ]
   },
   {
-    name: "Volz",
-    location: "Thun, Switzerland",
-    website: "https://www.volz.ch/",
-    websiteLabel: "volz.ch",
-    image: "../../assets/img/ref-volz.png",
-    imageAlt: "Volz Website Screenshot",
-    imageModule: "Brand Slider",
+    name: "Augenoptik Hensler",
+    location: "Frankfurt, Deutschland",
+    website: "https://www.optik-hensler.de/",
+    websiteLabel: "optik-hensler.de",
+    image: "../../assets/img/ref-hensler.png",
+    imageAlt: "Augenoptik Hensler Website Screenshot",
+    imageModule: "Brand Wall",
     pages: [
       {
-        label: "Brillen",
-        url: "https://www.volz.ch/brillen/",
-        modules: ["Product Wall", "Brand Slider"]
-      },
-      {
-        label: "Brillen online anprobieren",
-        url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/eyeglasses/",
-        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
-        type: "page"
+        label: "Brillenmode",
+        url: "https://www.optik-hensler.de/leistungen/mode",
+        modules: ["Brand Slider", "Brand Wall", "Product Wall Optical", "Product Wall Sun", "News Slider", "Logo Wall"]
       }
     ]
   },
@@ -186,23 +140,6 @@ const FAVR_REFERENCES = [
     ]
   },
   {
-    name: "EuroOptica",
-    location: "New York City, USA",
-    website: "https://www.eurooptica.com/",
-    websiteLabel: "eurooptica.com",
-    image: "../../assets/img/ref-eurooptica.png",
-    imageAlt: "EuroOptica Website Screenshot",
-    imageModule: "Brand Page",
-    pages: [
-      {
-        label: "Try-On",
-        url: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/eyeglasses/",
-        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
-        type: "page"
-      }
-    ]
-  },
-  {
     name: "Mahrt & Hoerning",
     location: "Göttingen, Germany",
     website: "https://www.mahrt-hoerning.de/",
@@ -226,6 +163,45 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "EuroOptica",
+    location: "New York City, USA",
+    website: "https://www.eurooptica.com/",
+    websiteLabel: "eurooptica.com",
+    image: "../../assets/img/ref-eurooptica.png",
+    imageAlt: "EuroOptica Website Screenshot",
+    imageModule: "Brand Page",
+    pages: [
+      {
+        label: "Try-On",
+        url: "https://www.favrspecs.com/en/opticians/in/new-york/364/eurooptica-uws/14545/pro/eyeglasses/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Optik Schade",
+    location: "Viersen, Deutschland",
+    website: "https://optikschade.com/",
+    websiteLabel: "optikschade.com",
+    webdesign: true,
+    image: "../../assets/img/ref-optikschade.png",
+    imageAlt: "Optik Schade Website Screenshot",
+    imageModule: "Logo Wall",
+    pages: [
+      {
+        label: "Home",
+        url: "https://optikschade.com/",
+        modules: ["Brand Slider", "Product Wall", "News Slider"]
+      },
+      {
+        label: "Brillenmarken",
+        url: "https://optikschade.com/brillenmarken/",
+        modules: ["Logo Wall", "Brand Wall"]
+      }
+    ]
+  },
+  {
     name: "Ramstein",
     location: "Basel, Switzerland",
     website: "https://www.ramstein-optik.ch/en/home",
@@ -237,6 +213,91 @@ const FAVR_REFERENCES = [
       {
         label: "Try it on!",
         url: "https://www.favrspecs.com/en/opticians/in/basel/189/ramstein-optik/10496/pro/brands/goetti/39/sunglasses/ahlf/2691/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Brillen Mahl",
+    location: "Bexbach, Germany",
+    website: "https://www.brillenmahl.de/",
+    websiteLabel: "brillenmahl.de",
+    webdesign: true,
+    image: "../../assets/img/ref-mahl.png",
+    imageAlt: "Brillen Mahl Website Screenshot",
+    imageModule: "Brand Wall",
+    pages: [
+      {
+        label: "Marken",
+        url: "https://www.brillenmahl.de/marken",
+        modules: ["Brand Wall"]
+      },
+      {
+        label: "Online Brillenanprobe",
+        url: "https://www.favrspecs.com/de/optiker/in/lebach/3098/brillen-mahl/13821/pro/optische-brillen/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Gutsch Optik",
+    location: "München, Deutschland",
+    website: "https://gutsch-optik.de/",
+    websiteLabel: "gutsch-optik.de",
+    webdesign: true,
+    image: "../../assets/img/ref-gutsch.png",
+    imageAlt: "Gutsch Optik Website Screenshot",
+    imageModule: "Product Wall",
+    pages: [
+      {
+        label: "Home",
+        url: "https://gutsch-optik.de/",
+        modules: ["Brand Slider", "Logo Wall", "Product Wall"]
+      },
+      {
+        label: "Try On",
+        url: "https://www.favrspecs.com/de/optiker/in/muenchen/218/gutsch-optik/20775/pro/optische-brillen/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Volz",
+    location: "Thun, Switzerland",
+    website: "https://www.volz.ch/",
+    websiteLabel: "volz.ch",
+    image: "../../assets/img/ref-volz.png",
+    imageAlt: "Volz Website Screenshot",
+    imageModule: "Brand Slider",
+    pages: [
+      {
+        label: "Brillen",
+        url: "https://www.volz.ch/brillen/",
+        modules: ["Product Wall", "Brand Slider"]
+      },
+      {
+        label: "Brillen online anprobieren",
+        url: "https://www.favrspecs.com/en/opticians/in/thun/456/volz-optik/10175/pro/eyeglasses/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Bellevue",
+    location: "Hamburg, Germany",
+    website: "https://bellevue-hamburg.de/",
+    websiteLabel: "bellevue-hamburg.de",
+    image: "../../assets/img/ref-bellevue.png",
+    imageAlt: "Bellevue Website Screenshot",
+    imageModule: "Brand Profile",
+    pages: [
+      {
+        label: "Brand Portfolio",
+        url: "https://bellevue-hamburg.de/",
         modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
@@ -256,23 +317,6 @@ const FAVR_REFERENCES = [
         label: "Brillenmarken / Online Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/heidelberg/560/allesbrille-manufaktur/10059/pro/marken/masunaga/78/between-ornament-and-structure-new-ksan-designs-by-masunaga-for-springsummer-2026/604/",
         modules: ["Brand Pages", "Product Pages", "Virtual Try-On"],
-        type: "page"
-      }
-    ]
-  },
-  {
-    name: "Bellevue",
-    location: "Hamburg, Germany",
-    website: "https://bellevue-hamburg.de/",
-    websiteLabel: "bellevue-hamburg.de",
-    image: "../../assets/img/ref-bellevue.png",
-    imageAlt: "Bellevue Website Screenshot",
-    imageModule: "Brand Profile",
-    pages: [
-      {
-        label: "Brand Portfolio",
-        url: "https://bellevue-hamburg.de/",
-        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
@@ -308,51 +352,6 @@ const FAVR_REFERENCES = [
         url: "https://www.favrspecs.com/de/optiker/in/stuttgart/221/brillenatelier-katrin-wagner/26412/pro/marken/hoffmann-natural-eyewear/53/rooted-in-place-the-heimat-image-campaign-by-hoffmann-natural-eyewear/582/",
         modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
-      }
-    ]
-  },
-  {
-    name: "Brillen Mahl",
-    location: "Bexbach, Germany",
-    website: "https://www.brillenmahl.de/",
-    websiteLabel: "brillenmahl.de",
-    webdesign: true,
-    image: "../../assets/img/ref-mahl.png",
-    imageAlt: "Brillen Mahl Website Screenshot",
-    imageModule: "Brand Wall",
-    pages: [
-      {
-        label: "MARKEN",
-        url: "https://www.brillenmahl.de/marken",
-        modules: ["Brand Wall"]
-      },
-      {
-        label: "Online Brillenanprobe",
-        url: "https://www.favrspecs.com/de/optiker/in/lebach/3098/brillen-mahl/13821/pro/optische-brillen/",
-        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
-        type: "page"
-      }
-    ]
-  },
-  {
-    name: "Optik Schade",
-    location: "Viersen, Deutschland",
-    website: "https://optikschade.com/",
-    websiteLabel: "optikschade.com",
-    webdesign: true,
-    image: "../../assets/img/ref-optikschade.png",
-    imageAlt: "Optik Schade Website Screenshot",
-    imageModule: "Logo Wall",
-    pages: [
-      {
-        label: "Home",
-        url: "https://optikschade.com/",
-        modules: ["Brand Slider", "Product Wall", "News Slider"]
-      },
-      {
-        label: "Brillenmarken",
-        url: "https://optikschade.com/brillenmarken/",
-        modules: ["Logo Wall", "Brand Wall"]
       }
     ]
   },
