@@ -312,6 +312,29 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Brillen Mahl",
+    location: "Bexbach, Germany",
+    website: "https://www.brillenmahl.de/",
+    websiteLabel: "brillenmahl.de",
+    webdesign: true,
+    image: "../../assets/img/ref-mahl.png",
+    imageAlt: "Brillen Mahl Website Screenshot",
+    imageModule: "Brand Wall",
+    pages: [
+      {
+        label: "MARKEN",
+        url: "https://www.brillenmahl.de/marken",
+        modules: ["Brand Wall"]
+      },
+      {
+        label: "Online Brillenanprobe",
+        url: "https://www.favrspecs.com/de/optiker/in/lebach/3098/brillen-mahl/13821/pro/optische-brillen/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Optik Schade",
     location: "Viersen, Deutschland",
     website: "https://optikschade.com/",
