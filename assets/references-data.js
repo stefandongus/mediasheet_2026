@@ -295,6 +295,23 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Brillenatelier Katrin Wagner",
+    location: "Stuttgart, Germany",
+    website: "https://www.katrinwagner.de/",
+    websiteLabel: "katrinwagner.de",
+    image: "../../assets/img/ref-katrinwagner.png",
+    imageAlt: "Brillenatelier Katrin Wagner Website Screenshot",
+    imageModule: "Brand Post",
+    pages: [
+      {
+        label: "VIRTUAL TRY ON",
+        url: "https://www.favrspecs.com/de/optiker/in/stuttgart/221/brillenatelier-katrin-wagner/26412/pro/marken/hoffmann-natural-eyewear/53/rooted-in-place-the-heimat-image-campaign-by-hoffmann-natural-eyewear/582/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Optik Schade",
     location: "Viersen, Deutschland",
     website: "https://optikschade.com/",
