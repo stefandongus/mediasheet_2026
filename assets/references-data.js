@@ -180,6 +180,23 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Atelier Valentin",
+    location: "Paris, France",
+    website: "http://www.ateliervalentin-paris.com/en/",
+    websiteLabel: "ateliervalentin-paris.com",
+    image: "../../assets/img/ref-valentin.png",
+    imageAlt: "Atelier Valentin Website Screenshot",
+    imageModule: "Try-On",
+    pages: [
+      {
+        label: "Try-On",
+        url: "https://www.favrspecs.com/fr/opticiens/a/paris/249/atelier-valentin/9913/pro/lunettes-de-vue/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Optik Schade",
     location: "Viersen, Deutschland",
     website: "https://optikschade.com/",
