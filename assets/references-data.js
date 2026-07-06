@@ -304,7 +304,7 @@ const FAVR_REFERENCES = [
     imageModule: "Brand Post",
     pages: [
       {
-        label: "VIRTUAL TRY ON",
+        label: "Virtual Try-On",
         url: "https://www.favrspecs.com/de/optiker/in/stuttgart/221/brillenatelier-katrin-wagner/26412/pro/marken/hoffmann-natural-eyewear/53/rooted-in-place-the-heimat-image-campaign-by-hoffmann-natural-eyewear/582/",
         modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
