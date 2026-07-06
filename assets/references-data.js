@@ -189,8 +189,42 @@ const FAVR_REFERENCES = [
     imageModule: "Try-On",
     pages: [
       {
-        label: "Try-On",
+        label: "Showroom",
         url: "https://www.favrspecs.com/fr/opticiens/a/paris/249/atelier-valentin/9913/pro/lunettes-de-vue/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Vandenbalck",
+    location: "Leuven, Belgium",
+    website: "https://vandenbalck.be/eyewear/",
+    websiteLabel: "vandenbalck.be",
+    image: "../../assets/img/ref-vandenbalck.png",
+    imageAlt: "Vandenbalck Website Screenshot",
+    imageModule: "Brand Post",
+    pages: [
+      {
+        label: "Pas nu online",
+        url: "https://www.favrspecs.com/en/opticians/in/leuven/586/vandenbalck-eyewear/10378/pro/eyeglasses/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "City Optik Stockholm",
+    location: "Stockholm, Sweden",
+    website: "https://cityoptik.se/",
+    websiteLabel: "cityoptik.se",
+    image: "../../assets/img/ref-cityoptik.png",
+    imageAlt: "City Optik Stockholm Website Screenshot",
+    imageModule: "Brand Page",
+    pages: [
+      {
+        label: "Prova glasögon virtuellt",
+        url: "https://www.favrspecs.com/en/opticians/in/stockholm/338/city-optik/15975/pro/eyeglasses/",
         modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
