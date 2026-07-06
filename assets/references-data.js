@@ -367,7 +367,7 @@ function renderReferences() {
           ${ref.pages.map(page => `
             <div class="ref-page">
               <div class="ref-page-top">
-                <a href="${page.url}" class="ref-page-link" target="_blank">↗ &ldquo;${page.label}&rdquo;</a>
+                <a href="${page.url}" class="ref-page-link" style="text-decoration:none;" target="_blank">↗ &ldquo;${page.label}&rdquo;</a>
                 <div class="ref-modules">
                   ${page.modules.map(m => page.type === 'page' ? `<span style="display:inline-block;font-size:10px;font-weight:600;letter-spacing:0.5px;background:#dbeafe;color:#1e3a5f;border:1px solid #93c5fd;padding:3px 10px;border-radius:999px;">✓ ${m}</span>` : `<span style="display:inline-block;font-size:10px;font-weight:600;letter-spacing:0.5px;background:#dcfce7;color:#14532d;border:1px solid #86efac;padding:3px 10px;border-radius:999px;">✓ ${m}</span>`).join('')}
                 </div>

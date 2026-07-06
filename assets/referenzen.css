@@ -133,7 +133,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  background: #f7f7f7;
+  background: #fafafa;
 }
 
 .ref-page {
@@ -159,7 +159,7 @@
 }
 
 .ref-page-link:hover { color: var(--gold); }
-.ref-page-link::after { content: ' ↗'; font-size: 14px; opacity: 0.5; }
+.ref-page-link::after { content: ''; }
 
 /* ── Modul-Tags ── */
 .ref-modules {
@@ -350,7 +350,7 @@
 
 /* Rechte Seite: leicht grau */
 .ref-navbar-info {
-  background: #f7f7f7;
+  background: #fafafa;
   padding: 32px;
   display: flex;
   flex-direction: column;
