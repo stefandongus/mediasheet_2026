@@ -278,6 +278,23 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Optik Gstaad",
+    location: "Gstaad, Switzerland",
+    website: "https://www.optikgstaad.ch/de.html",
+    websiteLabel: "optikgstaad.ch",
+    image: "../../assets/img/ref-gstaad.png",
+    imageAlt: "Optik Gstaad Website Screenshot",
+    imageModule: "Brand Page",
+    pages: [
+      {
+        label: "Produkte",
+        url: "https://www.favrspecs.com/de/optiker/in/saanen/803/optik-gstaad/11415/pro/marken/theo/89/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Optik Schade",
     location: "Viersen, Deutschland",
     website: "https://optikschade.com/",
