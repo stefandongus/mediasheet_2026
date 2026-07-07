@@ -252,7 +252,7 @@ const FAVR_REFERENCES = [
     location: "Knokke, Belgium",
     website: "https://www.zouteoptics.be/",
     websiteLabel: "zouteoptics.be",
-    image: "../../assets/img/ref-knokke.png",
+    image: "../../assets/img/ref-zoute.png",
     imageAlt: "Zoute Optics Website Screenshot",
     imageModule: "Brand Profile",
     pages: [
