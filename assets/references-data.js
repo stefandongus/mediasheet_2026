@@ -231,6 +231,40 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Wolf Meister Optik",
+    location: "Innsbruck, Austria",
+    website: "https://www.wolf-optik.at/",
+    websiteLabel: "wolf-optik.at",
+    image: "../../assets/img/ref-wolf.png",
+    imageAlt: "Wolf Meister Optik Website Screenshot",
+    imageModule: "Brand Profile",
+    pages: [
+      {
+        label: "show page",
+        url: "https://www.favrspecs.com/de/optiker/in/innsbruck/165/wolf-meister-optik/14522/pro/optische-brillen/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
+    name: "Zoute Optics",
+    location: "Knokke, Belgium",
+    website: "https://www.zouteoptics.be/",
+    websiteLabel: "zouteoptics.be",
+    image: "../../assets/img/ref-knokke.png",
+    imageAlt: "Zoute Optics Website Screenshot",
+    imageModule: "Brand Profile",
+    pages: [
+      {
+        label: "show page",
+        url: "https://www.favrspecs.com/nl/opticiens/in/knokke-heist/1050/zoute-optics/39460/pro/brillen/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Optik Schade",
     location: "Viersen, Deutschland",
     website: "https://optikschade.com/",
