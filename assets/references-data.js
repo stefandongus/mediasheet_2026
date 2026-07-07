@@ -248,23 +248,6 @@ const FAVR_REFERENCES = [
     ]
   },
   {
-    name: "Zoute Optics",
-    location: "Knokke, Belgium",
-    website: "https://www.zouteoptics.be/",
-    websiteLabel: "zouteoptics.be",
-    image: "../../assets/img/ref-zoute.png",
-    imageAlt: "Zoute Optics Website Screenshot",
-    imageModule: "Brand Profile",
-    pages: [
-      {
-        label: "show page",
-        url: "https://www.favrspecs.com/nl/opticiens/in/knokke-heist/1050/zoute-optics/39460/pro/brillen/",
-        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
-        type: "page"
-      }
-    ]
-  },
-  {
     name: "Optik Schade",
     location: "Viersen, Deutschland",
     website: "https://optikschade.com/",
@@ -283,6 +266,23 @@ const FAVR_REFERENCES = [
         label: "Brillenmarken",
         url: "https://optikschade.com/brillenmarken/",
         modules: ["Logo Wall", "Brand Wall"]
+      }
+    ]
+  },
+  {
+    name: "Zoute Optics",
+    location: "Knokke, Belgium",
+    website: "https://www.zouteoptics.be/",
+    websiteLabel: "zouteoptics.be",
+    image: "../../assets/img/ref-zoute.png",
+    imageAlt: "Zoute Optics Website Screenshot",
+    imageModule: "Brand Profile",
+    pages: [
+      {
+        label: "show page",
+        url: "https://www.favrspecs.com/nl/opticiens/in/knokke-heist/1050/zoute-optics/39460/pro/brillen/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
       }
     ]
   },
