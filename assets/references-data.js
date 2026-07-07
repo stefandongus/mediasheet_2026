@@ -206,7 +206,7 @@ const FAVR_REFERENCES = [
     imageModule: "Brand Post",
     pages: [
       {
-        label: "Pas nu online",
+        label: "Pas je bril online",
         url: "https://www.favrspecs.com/en/opticians/in/leuven/586/vandenbalck-eyewear/10378/pro/eyeglasses/",
         modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
