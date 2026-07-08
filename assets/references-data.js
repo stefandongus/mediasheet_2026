@@ -35,7 +35,7 @@ const FAVR_REFERENCES = [
   },
   {
     name: "Optik Leonhardt",
-    location: "Bretten, Deutschland",
+    location: "Bretten, Germany",
     website: "https://www.optik-leonhardt.de/",
     websiteLabel: "optik-leonhardt.de",
     webdesign: true,
@@ -63,7 +63,7 @@ const FAVR_REFERENCES = [
   },
   {
     name: "Optik Augustin",
-    location: "Essen, Deutschland",
+    location: "Essen, Germany",
     website: "https://optik-augustin.de/",
     websiteLabel: "optik-augustin.de",
     image: "../../assets/img/ref-augustin.png",
@@ -91,7 +91,7 @@ const FAVR_REFERENCES = [
   },
   {
     name: "Augenoptik Hensler",
-    location: "Frankfurt, Deutschland",
+    location: "Frankfurt, Germany",
     website: "https://www.optik-hensler.de/",
     websiteLabel: "optik-hensler.de",
     image: "../../assets/img/ref-hensler.png",
@@ -249,7 +249,7 @@ const FAVR_REFERENCES = [
   },
   {
     name: "Optik Schade",
-    location: "Viersen, Deutschland",
+    location: "Viersen, Germany",
     website: "https://optikschade.com/",
     websiteLabel: "optikschade.com",
     webdesign: true,
@@ -328,7 +328,7 @@ const FAVR_REFERENCES = [
   },
   {
     name: "Gutsch Optik",
-    location: "München, Deutschland",
+    location: "München, Germany",
     website: "https://gutsch-optik.de/",
     websiteLabel: "gutsch-optik.de",
     webdesign: true,
