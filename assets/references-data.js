@@ -248,6 +248,23 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Zickenheiner",
+    location: "Lörrach, Germany",
+    website: "https://www.zickenheiner-optik.de/",
+    websiteLabel: "zickenheiner-optik.de",
+    image: "../../assets/img/ref-zickenheiner.png",
+    imageAlt: "Zickenheiner Website Screenshot",
+    imageModule: "Brand Images",
+    pages: [
+      {
+        label: "show page",
+        url: "https://www.favrspecs.com/de/optiker/in/loerrach/429/zickenheiner-optik/11127/pro/marken/lunor/73/silent-statements-lunor-with-new-styles-in-the-a14-and-a5-series/511/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Optik Schade",
     location: "Viersen, Germany",
     website: "https://optikschade.com/",
