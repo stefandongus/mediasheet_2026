@@ -140,6 +140,27 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Optik Stock",
+    location: "Solingen, Germany",
+    website: "https://www.optikstock.de/",
+    websiteLabel: "optikstock.de",
+    image: "../../assets/img/ref-stock.png",
+    imageAlt: "Optik Stock Website Screenshot",
+    imageModule: "Logo Slider",
+    pages: [
+      {
+        label: "show page",
+        url: "https://www.optikstock.de/",
+        modules: ["Logo Slider", "News Slider"]
+      },
+      {
+        label: "Brillenmode",
+        url: "https://www.optikstock.de/brillenmode/",
+        modules: ["Brand Slider", "Brand Wall", "Product Wall Optical", "Product Wall Sun", "News Slider", "Logo Wall"]
+      }
+    ]
+  },
+  {
     name: "Mahrt & Hoerning",
     location: "Göttingen, Germany",
     website: "https://www.mahrt-hoerning.de/",
