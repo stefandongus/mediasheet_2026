@@ -46,12 +46,12 @@ const FAVR_REFERENCES = [
       {
         label: "Home",
         url: "https://www.optik-leonhardt.de/",
-        modules: ["Brand Slider", "News Slider", "Product Wall"]
+        modules: ["Logo Slider", "Brand Slider", "News Slider", "Product Wall"]
       },
       {
         label: "Brillen",
         url: "https://www.optik-leonhardt.de/brillen/",
-        modules: ["Logo Slider"]
+        modules: ["Logo Wall"]
       },
       {
         label: "Online Anprobieren",
