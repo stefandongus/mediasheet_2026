@@ -269,6 +269,23 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Blick",
+    location: "Rotterdam, Netherlands",
+    website: "https://blick.nl/",
+    websiteLabel: "blick.nl",
+    image: "../../assets/img/ref-blick.png",
+    imageAlt: "Blick Website Screenshot",
+    imageModule: "Product Inquiry",
+    pages: [
+      {
+        label: "show page",
+        url: "https://www.favrspecs.com/en/opticians/in/rotterdam/310/blick/15310/pro/sunglasses/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Zickenheiner",
     location: "Lörrach, Germany",
     website: "https://www.zickenheiner-optik.de/",
