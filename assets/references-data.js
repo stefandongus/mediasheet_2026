@@ -342,6 +342,23 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Filia76",
+    location: "Kassel, Germany",
+    website: "https://filia76.de/",
+    websiteLabel: "filia76.de",
+    image: "../../assets/img/ref-filia76.png",
+    imageAlt: "Filia76 Website Screenshot",
+    imageModule: "Sunglasses Brand Overview",
+    pages: [
+      {
+        label: "show page",
+        url: "https://www.favrspecs.com/de/optiker/in/kassel/396/filia76-glasses-for-identities-optiker/10431/pro/sonnenbrillen/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Ramstein",
     location: "Basel, Switzerland",
     website: "https://www.ramstein-optik.ch/en/home",
