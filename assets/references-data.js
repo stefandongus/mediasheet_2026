@@ -218,6 +218,33 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Bartels",
+    location: "Aschaffenburg, Germany",
+    website: "https://bartels-optik.de/",
+    websiteLabel: "bartels-optik.de",
+    image: "../../assets/img/ref-bartels.png",
+    imageAlt: "Bartels Website Screenshot",
+    imageModule: "Brand Slider",
+    pages: [
+      {
+        label: "Home",
+        url: "https://bartels-optik.de/",
+        modules: ["Brand Slider"]
+      },
+      {
+        label: "Brillenmarken",
+        url: "https://bartels-optik.de/brillenmarken/",
+        modules: ["News Slider"]
+      },
+      {
+        label: "show page",
+        url: "https://www.favrspecs.com/de/optiker/in/aschaffenburg/806/bartels/11788/pro/optische-brillen/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Vandenbalck",
     location: "Leuven, Belgium",
     website: "https://vandenbalck.be/eyewear/",
