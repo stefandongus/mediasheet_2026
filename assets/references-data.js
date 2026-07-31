@@ -413,6 +413,11 @@ const FAVR_REFERENCES = [
     imageModule: "Brand Wall",
     pages: [
       {
+        label: "Home",
+        url: "https://www.brillenmahl.de/",
+        modules: ["Brand Slider", "Product Wall", "News Slider", "Logo Wall"]
+      },
+      {
         label: "Marken",
         url: "https://www.brillenmahl.de/marken",
         modules: ["Brand Wall"]
