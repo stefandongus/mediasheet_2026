@@ -520,6 +520,16 @@ const FAVR_REFERENCES = [
     imageModule: "Brand Page",
     pages: [
       {
+        label: "show page",
+        url: "https://www.optikgstaad.ch/de.html",
+        modules: ["News Slider"]
+      },
+      {
+        label: "show page",
+        url: "https://www.optikgstaad.ch/de/produkte/brillen.html",
+        modules: ["Brand Slider", "Brand Wall"]
+      },
+      {
         label: "Produkte",
         url: "https://www.favrspecs.com/de/optiker/in/saanen/803/optik-gstaad/11415/pro/marken/theo/89/",
         modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
