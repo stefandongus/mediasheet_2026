@@ -515,9 +515,9 @@ const FAVR_REFERENCES = [
     location: "Gstaad, Switzerland",
     website: "https://www.optikgstaad.ch/de.html",
     websiteLabel: "optikgstaad.ch",
-    image: "../../assets/img/ref-gstaad.png",
+    image: "../../assets/img/ref-gstaad2.png",
     imageAlt: "Optik Gstaad Website Screenshot",
-    imageModule: "Brand Page",
+    imageModule: "Brand Slider &amp; Brand Wall",
     pages: [
       {
         label: "show page",
