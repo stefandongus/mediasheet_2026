@@ -201,6 +201,33 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Optik Gstaad",
+    location: "Gstaad, Switzerland",
+    website: "https://www.optikgstaad.ch/de.html",
+    websiteLabel: "optikgstaad.ch",
+    image: "../../assets/img/ref-gstaad2.png",
+    imageAlt: "Optik Gstaad Website Screenshot",
+    imageModule: "Brand Slider &amp; Brand Wall",
+    pages: [
+      {
+        label: "show page",
+        url: "https://www.optikgstaad.ch/de.html",
+        modules: ["News Slider"]
+      },
+      {
+        label: "show page",
+        url: "https://www.optikgstaad.ch/de/produkte/brillen.html",
+        modules: ["Brand Slider", "Brand Wall"]
+      },
+      {
+        label: "Produkte",
+        url: "https://www.favrspecs.com/de/optiker/in/saanen/803/optik-gstaad/11415/pro/marken/theo/89/",
+        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
+        type: "page"
+      }
+    ]
+  },
+  {
     name: "Atelier Valentin",
     location: "Paris, France",
     website: "http://www.ateliervalentin-paris.com/en/",
@@ -506,33 +533,6 @@ const FAVR_REFERENCES = [
         label: "Brillenmarken / Online Brillenanprobe",
         url: "https://www.favrspecs.com/de/optiker/in/heidelberg/560/allesbrille-manufaktur/10059/pro/marken/masunaga/78/between-ornament-and-structure-new-ksan-designs-by-masunaga-for-springsummer-2026/604/",
         modules: ["Brand Pages", "Product Pages", "Virtual Try-On"],
-        type: "page"
-      }
-    ]
-  },
-  {
-    name: "Optik Gstaad",
-    location: "Gstaad, Switzerland",
-    website: "https://www.optikgstaad.ch/de.html",
-    websiteLabel: "optikgstaad.ch",
-    image: "../../assets/img/ref-gstaad2.png",
-    imageAlt: "Optik Gstaad Website Screenshot",
-    imageModule: "Brand Slider &amp; Brand Wall",
-    pages: [
-      {
-        label: "show page",
-        url: "https://www.optikgstaad.ch/de.html",
-        modules: ["News Slider"]
-      },
-      {
-        label: "show page",
-        url: "https://www.optikgstaad.ch/de/produkte/brillen.html",
-        modules: ["Brand Slider", "Brand Wall"]
-      },
-      {
-        label: "Produkte",
-        url: "https://www.favrspecs.com/de/optiker/in/saanen/803/optik-gstaad/11415/pro/marken/theo/89/",
-        modules: ["Brand Portfolio", "Brand Pages", "Product Pages", "Virtual Try-On"],
         type: "page"
       }
     ]
