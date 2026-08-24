@@ -340,6 +340,27 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Brillen Bahn",
+    location: "Hagen, Germany",
+    website: "https://brillen-bahn.de/",
+    websiteLabel: "brillen-bahn.de",
+    image: "../../assets/img/ref-bahn.png",
+    imageAlt: "Brillen Bahn Website Screenshot",
+    imageModule: "Brand Wall",
+    pages: [
+      {
+        label: "show page",
+        url: "https://brillen-bahn.de/brillen/aktuelle-trends/",
+        modules: ["Brand Slider", "Product Wall Optisch", "Product Wall Sun"]
+      },
+      {
+        label: "show page",
+        url: "https://brillen-bahn.de/brillen/marken/",
+        modules: ["Brand Wall"]
+      }
+    ]
+  },
+  {
     name: "Zickenheiner",
     location: "Lörrach, Germany",
     website: "https://www.zickenheiner-optik.de/",
