@@ -434,6 +434,27 @@ const FAVR_REFERENCES = [
     ]
   },
   {
+    name: "Optik Hühn",
+    location: "Tönisvorst, Germany",
+    website: "https://optikhuehn.de/optik",
+    websiteLabel: "optikhuehn.de",
+    image: "../../assets/img/ref-huehn.png",
+    imageAlt: "Optik Hühn Website Screenshot",
+    imageModule: "News Slider",
+    pages: [
+      {
+        label: "show page",
+        url: "https://optikhuehn.de/optik",
+        modules: ["News Slider"]
+      },
+      {
+        label: "show page",
+        url: "https://optikhuehn.de/optik/brillen#marken",
+        modules: ["Brand Slider"]
+      }
+    ]
+  },
+  {
     name: "Ramstein",
     location: "Basel, Switzerland",
     website: "https://www.ramstein-optik.ch/en/home",
