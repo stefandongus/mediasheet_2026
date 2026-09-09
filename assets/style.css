@@ -579,7 +579,7 @@ section { padding: var(--section-pad); }
 
 /* --- EINSTIEG --- */
 #einstieg {
-  background: var(--bg);
+  background: var(--white);
   padding: var(--section-pad);
 }
 
@@ -599,7 +599,12 @@ section { padding: var(--section-pad); }
 .step-card {
   background: var(--white);
   padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
+.step-card .btn { margin-top: auto; }
 
 .step-num {
   width: 36px;
@@ -669,6 +674,21 @@ section { padding: var(--section-pad); }
 .ts-included-badge { display: inline-block; background: var(--gold); color: var(--white); font-weight: 700; font-size: 13px; letter-spacing: 0.3px; padding: 14px 28px; border-radius: var(--radius); margin: 8px 0 48px; }
 @media (max-width: 900px) {
   .ts-features { grid-template-columns: 1fr; }
+}
+
+.ts-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
+.ts-contact-card {
+  background: var(--white);
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ts-contact-card .ts-icon { width: 40px; height: 40px; margin-bottom: 0; flex-shrink: 0; }
+.ts-contact-card a { color: var(--dark); font-size: 15px; text-decoration: none; }
+.ts-contact-card a:hover { text-decoration: underline; }
+@media (max-width: 700px) {
+  .ts-contact-grid { grid-template-columns: 1fr; }
 }
 
 /* --- FAQ --- */
