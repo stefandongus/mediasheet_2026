@@ -6,6 +6,28 @@
 
 const FAVR_REFERENCES = [
   {
+    name: "Optiker Brökelschen",
+    location: "Moers, Germany",
+    website: "https://optiker-broekelschen.de/",
+    websiteLabel: "optiker-broekelschen.de",
+    webdesign: true,
+    image: "../../assets/img/ref_broekelschen.jpg",
+    imageAlt: "Optiker Brökelschen Website Screenshot",
+    imageModule: "Brand Slider",
+    pages: [
+      {
+        label: "Home",
+        url: "https://optiker-broekelschen.de/",
+        modules: ["Logo Slider", "Brand Slider", "News Slider"]
+      },
+      {
+        label: "Kollektionen",
+        url: "https://optiker-broekelschen.de/kollektionen",
+        modules: ["Brand Wall"]
+      }
+    ]
+  },
+  {
     name: "Toerschen",
     location: "Tönisvorst, Germany",
     website: "https://toerschen.com/",
